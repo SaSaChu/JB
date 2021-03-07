@@ -1,0 +1,24 @@
+@import "Ginkgo";
+@import "color";
+
+input, textarea {
+  border:0 none;
+  outline: 0;
+  background-color: transparent;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari 和 Chrome */
+}
+
+.input-f {
+  display: inline-block;
+  width: 100%;
+  color: $font-deep-black;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border: 1px solid $input_grey_l;
+  @include border-radius(3px);
+
+  &::placeholder {
+    color: $font-grey;
+  }
+}

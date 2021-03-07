@@ -1,0 +1,22 @@
+@import "Ginkgo";
+@import "color";
+
+button, a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+}
+
+.btn-full-blue {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  font-size: 1.2rem;
+  background-color: $btn_blue_l;
+  @include border-radius(3px);
+
+  &:hover {
+    opacity: .9;
+  }
+}

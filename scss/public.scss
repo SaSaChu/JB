@@ -1,0 +1,111 @@
+@import "Ginkgo";
+@import "color";
+@import "space";
+@import "font";
+@import "link";
+@import "input";
+
+body {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  color: rgba(32, 46, 50, 1.00);
+
+  font-size: 13px;
+  text-align: center;
+  font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  
+  background-color: $bg_blue;
+}
+
+.order-l {
+  float: left;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.order-r {
+  float: right;
+  background-color: rgba(0, 128, 0, 0.2);
+}
+
+.boxsInline {
+  display: inline-block;
+}
+
+.boxsFull {
+  display: inline-block;
+  width: 100%;
+}
+
+.boxs-max990 {
+  display: inline-block;
+  width: 100%;
+  max-width: 990px;
+  @include clearfix();
+}
+
+.menuArea {
+  display: inline-block;
+  width: calc(100% / 7 - 40px * 6 / 7);
+  max-height: 115px;
+  background-color: white;
+  @include border-radius(3px);
+  float: left;
+  padding: 15px;
+
+  &:nth-child(7n+1) {
+    margin-right: 40px;
+  }
+
+  &:nth-child(n+7) {
+    margin: 0;
+  }
+}
+
+.bigBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  .loginBox {
+    display: inline-block;
+    width: 100%;
+    max-width: 610px;
+    @include border-radius(4px);
+    background-color: white;
+    @include clearfix();
+  }
+}
+
+.box50 {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  height: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+

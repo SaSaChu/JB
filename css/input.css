@@ -1,0 +1,7 @@
+@charset "UTF-8";
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+
+input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
+
+.input-f { display: inline-block; width: 100%; color: #202e32; font-size: 1.1rem; padding: 10px 15px; border: 1px solid #dcdbdc; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.input-f::placeholder { color: #8c9198; }
