@@ -4,6 +4,7 @@
 @import "font";
 @import "link";
 @import "input";
+@import "other";
 
 body {
   position: relative;
@@ -24,12 +25,10 @@ body {
 
 .order-l {
   float: left;
-  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .order-r {
   float: right;
-  background-color: rgba(0, 128, 0, 0.2);
 }
 
 .boxsInline {
@@ -41,29 +40,18 @@ body {
   width: 100%;
 }
 
+.boxsFull_15 {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  @include clearfix();
+}
+
 .boxs-max990 {
   display: inline-block;
   width: 100%;
   max-width: 990px;
   @include clearfix();
-}
-
-.menuArea {
-  display: inline-block;
-  width: calc(100% / 7 - 40px * 6 / 7);
-  max-height: 115px;
-  background-color: white;
-  @include border-radius(3px);
-  float: left;
-  padding: 15px;
-
-  &:nth-child(7n+1) {
-    margin-right: 40px;
-  }
-
-  &:nth-child(n+7) {
-    margin: 0;
-  }
 }
 
 .bigBox {
@@ -87,6 +75,13 @@ body {
   display: inline-block;
   width: 50%;
   float: left;
+  @include clearfix();
+}
+
+.iconBoxs {
+  display: inline-block;
+  float: right;
+  padding: 27px 0;
 }
 
 header {
@@ -98,10 +93,211 @@ header {
   background-color: white;
 }
 
+.lMenu {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  width: 200px;
+  float: left;
+  padding: 15px 10px;
+  margin-bottom: 30px;
+  font-size: 1.15rem;
+  color: $font-deep-black;
+  background-color: white;
+
+  &:before {
+    display: inline-block;
+    content: '\e913';
+    font-family: icon;
+    color: $blue;
+    font-size: 1.2rem;
+    margin: 4px 5px 0 0;
+  }
+
+  &:after {
+    display: inline-block;
+    content: '\e915';
+    font-family: icon;
+    color: $font-deep-black;
+    font-size: 1rem;
+    float: right;
+    margin-top: 5px;
+  }
+
+  &.lMenu-show {
+    &:after {
+      transform: rotateX(180deg);
+    }
+  }
+}
+
+.rTagBox {
+  display: inline-block;
+  width: calc(100% - 200px);
+  float: left;
+  position: relative;
+  height: 55px;
+
+  .tagBox {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.block-l {
+  display: inline-block;
+  width: 230px;
+  float: left;
+  padding-right: 30px;  
+  
+  &.block-l-show {
+    display: none; 
+  }
+}
+
+.block-r {
+  display: inline-block;
+  width: calc(100% - 230px);
+  float: left;
+
+  &.block-r-show {
+    width: 100%;
+  }
+}
+
+// 左邊-下拉選單
+.block-l-menuBox {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  @include border-radius(3px);
+  height: 100%;
+  @include transition(left .3s, right .3s);
+  @include clearfix();
+  text-align: left;
+  padding: 0;
+
+  span {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    color: $font-deep-black;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition(all .3s);
+    border-bottom: 1px solid $grey_l;
+
+    &:after {
+      display: inline-block;
+      content: '\e910';
+      font-family: 'icon';
+      color: $blue_l;
+      font-size: .9rem;
+      float: right;
+    }
+  }
+
+  > span, > a, > div > a, > div > div > a, > div > span {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    color: $font-deep-black;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition(all .3s);
+    @include transition(all .3s);
+    border-bottom: 1px solid rgba(226, 226, 226, 1.00);
+
+    &.s_menublue {
+      color: $font-deep-black;
+      border-left: 2px solid $blue;
+    }
+  }
+
+  > span, > a {
+    color: $font-deep-black;
+    font-size: 1rem;
+
+    &.db2 {
+      padding: 10px 15px;
+    }
+  }
+
+  > span.s {
+    border-bottom: 1px solid $grey_l;
+
+    &:after {
+      display: inline-block;
+      content: '\e90b';
+      font-family: 'icon';
+      color: $blue_l;
+      font-size: .9rem;
+      float: right;
+    }
+
+    + div {
+      display: none;
+    }
+  }
+
+  > div > span.s {
+    border-bottom: 0;
+    background-color: rgba(216, 216, 216, 1.00);
+
+    &:after {
+      // @include rotate(90deg);
+      color: $blue_l;
+    }
+
+    + div {
+      display: block;
+    }
+  }
+
+  .m-smenu {
+    display: inline-block;
+    border-bottom: 1px solid $grey_l;
+
+    > a {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 15px 10px 30px;
+      color: $font-grey;
+      text-decoration: none;
+      cursor: pointer;
+      @include transition(all .3s);
+      font-size: 1rem;
+      border-bottom: 1px dotted rgba(152, 152, 152, .2);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      &:hover, &:active {
+        color: $font-deep-black;
+        background-color: $blue_l_30;
+      }
+
+      &.l-menu-active {
+        color: $font-deep-black;
+        background-color: $blue_l_30;
+      }
+    }
+  }
+}
+
+.centBoxs {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  @include border-radius(3px);
+  padding: 30px;
+}
 
 
-
-
+  
 
 
 

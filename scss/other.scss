@@ -1,0 +1,22 @@
+@import "Ginkgo";
+@import "color";
+
+.menuArea {
+  p {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: $blue_l;
+
+    &.icon-menu_icon01, &.icon-menu_icon02svg {
+      font-size: 3rem;
+    }
+  }
+
+  &:hover, &:active {
+    background-color: $blue_l;
+
+    p {
+      color: white;
+    }
+  }
+}

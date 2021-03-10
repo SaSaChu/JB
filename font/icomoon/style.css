@@ -1,18 +1,19 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?7vfwjk');
-  src:  url('fonts/icomoon.eot?7vfwjk#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?7vfwjk') format('truetype'),
-    url('fonts/icomoon.woff?7vfwjk') format('woff'),
-    url('fonts/icomoon.svg?7vfwjk#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?cpmdkj');
+  src:  url('fonts/icomoon.eot?cpmdkj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?cpmdkj') format('truetype'),
+    url('fonts/icomoon.woff?cpmdkj') format('woff'),
+    url('fonts/icomoon.svg?cpmdkj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,3 +25,99 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-icon_mail:before {
+  content: "\e900";
+}
+.icon-icon03:before {
+  content: "\e901";
+}
+.icon-icon04:before {
+  content: "\e902";
+}
+.icon-icon05:before {
+  content: "\e903";
+}
+.icon-menu_icon01:before {
+  content: "\e904";
+}
+.icon-menu_icon02svg:before {
+  content: "\e905";
+}
+.icon-search:before {
+  content: "\e906";
+}
+.icon-home:before {
+  content: "\e907";
+}
+.icon-lock-closed:before {
+  content: "\e908";
+}
+.icon-eye:before {
+  content: "\e909";
+}
+.icon-trash:before {
+  content: "\e90a";
+}
+.icon-add:before {
+  content: "\e90b";
+}
+.icon-add_circle:before {
+  content: "\e90c";
+}
+.icon-clear:before {
+  content: "\e90d";
+}
+.icon-content_copy:before {
+  content: "\e90e";
+}
+.icon-create:before {
+  content: "\e90f";
+}
+.icon-remove:before {
+  content: "\e910";
+}
+.icon-remove_circle:before {
+  content: "\e911";
+}
+.icon-folder_shared:before {
+  content: "\e912";
+}
+.icon-dehaze:before {
+  content: "\e913";
+}
+.icon-arrow_drop_down:before {
+  content: "\e914";
+}
+.icon-arrow_drop_up:before {
+  content: "\e915";
+}
+.icon-cancel:before {
+  content: "\e916";
+}
+.icon-account_box:before {
+  content: "\e917";
+}
+.icon-assignment_ind:before {
+  content: "\e918";
+}
+.icon-check_circle:before {
+  content: "\e919";
+}
+.icon-exit_to_app:before {
+  content: "\e91a";
+}
+.icon-info:before {
+  content: "\e91b";
+}
+.icon-chevron-down:before {
+  content: "\e91c";
+}
+.icon-chevron-up:before {
+  content: "\e91d";
+}
+.icon-send:before {
+  content: "\e91e";
+}
+.icon-lock:before {
+  content: "\e91f";
+}
