@@ -1,4 +1,4 @@
-@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1615354058') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1615354058') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1615354058') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1615354058') format('svg'); }
+@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1615436533') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1615436533') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1615436533') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1615436533') format('svg'); }
 *[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
 
 .icon-icon_mail:before { content: "\e900"; }

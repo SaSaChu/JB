@@ -4,3 +4,45 @@
 .menuArea p.icon-menu_icon01, .menuArea p.icon-menu_icon02svg { font-size: 3rem; }
 .menuArea:hover, .menuArea:active { background-color: #4397ff; }
 .menuArea:hover p, .menuArea:active p { color: white; }
+
+.numL, .numR { display: inline-block; width: 40px; height: 40px; font-size: 1.23rem; color: white; line-height: 40px; background-color: #758499; text-align: center; }
+.numL:hover, .numL:active, .numR:hover, .numR:active { opacity: .5; }
+
+.numL { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+
+.numR { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
+
+.t-page { display: inline-block; font-size: 1.23rem; color: rgba(117, 132, 153, 0.5); line-height: 40px; margin-right: 12px; }
+
+.table-header, .table-body { display: inline-block; width: 100%; padding: 15px 10px; *zoom: 1; text-align: center; }
+.table-header:after, .table-body:after { display: table; content: ""; line-height: 0; clear: both; }
+
+.table-header { border-top: 2px solid rgba(67, 151, 255, 0.3); border-bottom: 2px solid rgba(67, 151, 255, 0.3); font-weight: bolder; color: #202e32; font-size: 1.15rem; }
+
+.table-body { border-bottom: 1px solid rgba(67, 151, 255, 0.3); color: #8c9198; font-size: 1.07rem; }
+
+.table-box10, .table-box20, .table-box30, .table-box40, .table-box50, .table-box60, .table-box70, .table-box80, .table-box90 { display: inline-block; float: left; }
+
+.noneFloat { float: none !important; }
+
+.table-box10 { width: 10%; }
+
+.table-box20 { width: 20%; }
+
+.table-box30 { width: 30%; }
+
+.table-box40 { width: 40%; }
+
+.table-box50 { width: 50%; }
+
+.table-box60 { width: 60%; }
+
+.table-box70 { width: 70%; }
+
+.table-box80 { width: 80%; }
+
+.table-box90 { width: 90%; }
+
+.splitLine_bl { display: inline-block; width: 100%; border-bottom: 1px dotted rgba(67, 151, 255, 0.3); margin: 25px 0; }
+
+.proListImg { display: inline-block; width: 100%; max-width: 80px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #dcdbdc; overflow: hidden; }

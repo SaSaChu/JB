@@ -18,6 +18,18 @@ input, textarea {
   border: 1px solid $grey_l;
   @include border-radius(3px);
 
+  &.in-w-10 {
+    width: 50px;
+  }
+
+  &.in-w-30 {
+    width: 30%;
+  }
+
+  &.in-w-40 {
+    width: 40%;
+  }
+
   &::placeholder {
     color: $font-grey;
   }
@@ -76,6 +88,37 @@ label {
     &:hover, &:active {
       background-color: rgba(67, 151, 255, 1);
       color: white;
+    }
+  }
+}
+
+
+.select-style {
+  padding: 0;
+  margin: 0;
+  border: 1px solid $grey_l;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #fff;
+  background: #fff url(../img/se_icon.svg) no-repeat 100% 50%;
+
+  select {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: $font-grey;
+
+    &:focus {
+      outline: none;
+      color: $font-deep-black;
     }
   }
 }

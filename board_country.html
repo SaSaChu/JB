@@ -13,7 +13,7 @@
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
   </head>
-  <body>
+  <body class="p-d-100">
     <header>
       <!-- 左 -->
       <div class='box50 text-l'>
@@ -38,7 +38,7 @@
         <div class='rTagBox'>
           <div class='tagBox'>
             <a class='tag' href="menu.html">內網首頁</a>
-            <a class='tag' href="board_forget_pw.html">取回密碼</a>
+            <a class='tag' href="board_country.html">國別管理</a>
           </div>
         </div>
       </div>
@@ -47,54 +47,213 @@
         <!-- 左選單 -->
         <div class='block-l'>
           <div class='block-l-menuBox'>
-              <span class="m-menu-t">第一層選單</span>
-              <div class="m-smenu">
-                <!-- <a class='l-menu-active' href="" >第二層選單</a> -->
-                <a href="" >第二層選單</a>
-                <a href="" >第二層選單</a>
-              </div>
-
-              <span class="m-menu-t">第一層選單</span>
-              <div class="m-smenu">
-                <a href="" >第二層選單</a>
-                <a href="" >第二層選單</a>
-              </div>
-
-              <span class="m-menu-t">第一層選單</span>
-              <div class="m-smenu">
-                <a href="" >第二層選單</a>
-                <a href="" >第二層選單</a>
-              </div>
-
-              <span class="m-menu-t">第一層選單</span>
-              <div class="m-smenu">
-                <a href="" >第二層選單</a>
-                <a href="" >第二層選單</a>
-              </div>
-
-              <span class="m-menu-t">第一層選單</span>
-              <div class="m-smenu">
-                <a href="" >第二層選單</a>
-                <a href="" >第二層選單</a>
-              </div>
-
-              <span class="m-menu-t">第一層選單</span>
-              <div class="m-smenu">
-                <a href="" >第二層選單</a>
-                <a href="" >第二層選單</a>
-              </div>
-
-              <a class='db2' href=''>第一層選單</a>
-              <a class='db2' href="">第一層選單</a>
-              <a class='db2' href="">第一層選單</a>
+            <span class="m-menu-t">系統管理者</span>
+            <div class="m-smenu">
+              <a href="board_forget_pw.html" >取回密碼</a>
+              <a class='l-menu-active' href="board_country.html">國別管理</a>
+              <a href="board_phrase.html" >片語管理</a>
+              <a href="board_template.html" >詢價範本管理</a>
             </div>
 
+            <span class="m-menu-t">一般業務</span>
+            <div class="m-smenu">
+              <a href="board_price_list.html" >詢價列表</a>
+              <a href="board_sales_report.html" >業務報表</a>
+            </div>
+
+            <span class="m-menu-t">資深業務</span>
+            <div class="m-smenu">
+              <a href="board_price_list_v2.html" >詢價列表</a>
+              <a href="board_sales_report_v2.html" >業務報表</a>
+            </div>
+
+            <span class="m-menu-t">採購</span>
+            <div class="m-smenu">
+              <a href="board_purchase_list.html" >採購取件</a>
+              <a href="board_purchase_report.html" >採購報表</a>
+            </div>
+
+            <span class="m-menu-t">產品、人員管理</span>
+            <div class="m-smenu">
+              <a href="board_product_category.html" >產品類別管理</a>
+              <a href="board_product.html" >產品管理</a>
+              <a href="board_staff.html" >人員管理</a>
+              <a href="board_client.html" >客戶管理</a>
+              <a href="board_firm.html" >廠商管理</a>
+              <a href="board_firm_staff.htm" >廠商聯絡人管理</a>
+            </div>
+
+            <!-- <a class='db2' href="">第一層選單</a> -->
+          </div>
         </div>
+
         <!-- 右內容 -->
         <div class='block-r'>
-          <div class='centBoxs'></div>
+          <div class='centBoxs'>
+            <div class='boxsFull'>
+              <p class="t-blue-20 p-d-30">國別管理</p>
+              <a class='btn-outline-blue icon-add order-r' href="board_country_edit.html">&nbsp;新增國別</a>
+            </div>
+
+            <div class='boxsFull'>
+              <div class='boxs30'>
+                <p class='t-r-15 text-l p-d-10'>國別中文</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
+              </div>
+              <div class='boxs30'>
+                <p class='t-r-15 text-l p-d-10'>國別英文</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
+              </div>
+              <div class='boxs30'>
+                <p class='t-r-15 text-l p-d-10'>編碼</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
+              </div>
+
+              <div class='boxsFull m-td-25'>
+                <a class='btn-half-blue icon-search order-r' href="index.html">&nbsp;搜尋</a>
+              </div>
+            </div>
+
+            <div class='boxsFull'>
+              <div class='table-header'>
+                <p class='table-box20'>編&nbsp;碼</p>
+                <p class='table-box20'>國別中文</p>
+                <p class='table-box20'>國別英文</p>
+                <p class='table-box30'>備&nbsp;註</p>
+                <p class='table-box10'>操&nbsp;作</p>
+              </div>
+              <div class='table-body'>
+                <p class='table-box20'>編碼01</p>
+                <p class='table-box20'>台灣</p>
+                <p class='table-box20'>TW</p>
+                <p class='table-box30 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+                <p class='table-box10'>
+                  <a class='iconLink linkGrey icon-eye' href="board_country_detail.html"></a>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_country_edit2.html"></a>
+                </p>
+              </div>
+              <div class='table-body'>
+                <p class='table-box20'>編碼02</p>
+                <p class='table-box20'>台灣</p>
+                <p class='table-box20'>TW</p>
+                <p class='table-box30 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+                <p class='table-box10'>
+                  <a class='iconLink linkGrey icon-eye' href="board_country_detail.html"></a>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_country_edit2.html"></a>
+                </p>
+              </div>
+              <div class='table-body'>
+                <p class='table-box20'>編碼03</p>
+                <p class='table-box20'>台灣</p>
+                <p class='table-box20'>TW</p>
+                <p class='table-box30 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+                <p class='table-box10'>
+                  <a class='iconLink linkGrey icon-eye' href="board_country_detail.html"></a>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_country_edit2.html"></a>
+                </p>
+              </div>
+              <div class='table-body'>
+                <p class='table-box20'>編碼04</p>
+                <p class='table-box20'>台灣</p>
+                <p class='table-box20'>TW</p>
+                <p class='table-box30 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+                <p class='table-box10'>
+                  <a class='iconLink linkGrey icon-eye' href="board_country_detail.html"></a>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_country_edit2.html"></a>
+                </p>
+              </div>
+              <div class='table-body'>
+                <p class='table-box20'>編碼05</p>
+                <p class='table-box20'>台灣</p>
+                <p class='table-box20'>TW</p>
+                <p class='table-box30 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+                <p class='table-box10'>
+                  <a class='iconLink linkGrey icon-eye' href="board_country_detail.html"></a>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_country_edit2.html"></a>
+                </p>
+              </div>
+              <div class='table-body'>
+                <p class='table-box20'>編碼06</p>
+                <p class='table-box20'>台灣</p>
+                <p class='table-box20'>TW</p>
+                <p class='table-box30 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+                <p class='table-box10'>
+                  <a class='iconLink linkGrey icon-eye' href="board_country_detail.html"></a>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_country_edit2.html"></a>
+                </p>
+              </div>
+              <div class='table-body'>
+                <p class='table-box20'>編碼07</p>
+                <p class='table-box20'>台灣</p>
+                <p class='table-box20'>TW</p>
+                <p class='table-box30 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+                <p class='table-box10'>
+                  <a class='iconLink linkGrey icon-eye' href="board_country_detail.html"></a>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_country_edit2.html"></a>
+                </p>
+              </div>
+              <div class='table-body'>
+                <p class='table-box20'>編碼08</p>
+                <p class='table-box20'>台灣</p>
+                <p class='table-box20'>TW</p>
+                <p class='table-box30 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+                <p class='table-box10'>
+                  <a class='iconLink linkGrey icon-eye' href="board_country_detail.html"></a>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_country_edit2.html"></a>
+                </p>
+              </div>
+              <div class='table-body'>
+                <p class='table-box20'>編碼09</p>
+                <p class='table-box20'>台灣</p>
+                <p class='table-box20'>TW</p>
+                <p class='table-box30 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+                <p class='table-box10'>
+                  <a class='iconLink linkGrey icon-eye' href="board_country_detail.html"></a>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_country_edit2.html"></a>
+                </p>
+              </div>
+              <div class='table-body'>
+                <p class='table-box20'>編碼10</p>
+                <p class='table-box20'>台灣</p>
+                <p class='table-box20'>TW</p>
+                <p class='table-box30 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+                <p class='table-box10'>
+                  <a class='iconLink linkGrey icon-eye' href="board_country_detail.html"></a>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_country_edit2.html"></a>
+                </p>
+              </div>
+            </div>
+
+            <div class='boxsFull m-td-25'>
+              <div class='numBox'>
+                <p class='t-page'>Page</p>
+                <label>
+                  <input class='input-f in-w-10' type="" name="">
+                </label>
+                <p class='t-page'>of 2,000</p>
+                <div class="numL icon-chevron-down"></div>
+                <div class="numR icon-chevron-down"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+

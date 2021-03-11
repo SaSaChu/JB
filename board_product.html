@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+    <title>程炬集團-內部系統</title>
+
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+  </head>
+  <body class="p-d-100">
+    <header>
+      <!-- 左 -->
+      <div class='box50 text-l'>
+        <img class='p-t-16 p-r-15 order-l' src="img/logo.png">
+        <p class='topName'>詢價系統</p>
+      </div>
+      <!-- 右 -->
+      <div class='box50 text-r'>
+        <p class='topName'>嗨，王小明</p>
+        <div class='iconBoxs'>
+          <a class='iconLink linkBlue icon-account_box' href=""></a>
+          <a class='iconLink linkBlue m-l-10 icon-home' href="menu.html"></a>
+          <a class='iconLink linkBlue m-l-10 icon-exit_to_app' href=""></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 內容 -->
+    <div class='boxsFull_15'>
+      <div class='boxsFull'>
+        <div class='lMenu'>功能選單</div>
+        <div class='rTagBox'>
+          <div class='tagBox'>
+            <a class='tag' href="menu.html">內網首頁</a>
+            <a class='tag' href="board_product.html">產品管理</a>
+          </div>
+        </div>
+      </div>
+
+      <div class='boxsFull'>
+        <!-- 左選單 -->
+        <div class='block-l'>
+          <div class='block-l-menuBox'>
+            <span class="m-menu-t">系統管理者</span>
+            <div class="m-smenu">
+              <a href="board_forget_pw.html" >取回密碼</a>
+              <a href="board_country.html">國別管理</a>
+              <a href="board_phrase.html" >片語管理</a>
+              <a href="board_template.html" >詢價範本管理</a>
+            </div>
+
+            <span class="m-menu-t">一般業務</span>
+            <div class="m-smenu">
+              <a href="board_price_list.html" >詢價列表</a>
+              <a href="board_sales_report.html" >業務報表</a>
+            </div>
+
+            <span class="m-menu-t">資深業務</span>
+            <div class="m-smenu">
+              <a href="board_price_list_v2.html" >詢價列表</a>
+              <a href="board_sales_report_v2.html" >業務報表</a>
+            </div>
+
+            <span class="m-menu-t">採購</span>
+            <div class="m-smenu">
+              <a href="board_purchase_list.html" >採購取件</a>
+              <a href="board_purchase_report.html" >採購報表</a>
+            </div>
+
+            <span class="m-menu-t">產品、人員管理</span>
+            <div class="m-smenu">
+              <a href="board_product_category.html">產品類別管理</a>
+              <a class='l-menu-active' href="board_product.html">產品管理</a>
+              <a href="board_staff.html" >人員管理</a>
+              <a href="board_client.html" >客戶管理</a>
+              <a href="board_firm.html" >廠商管理</a>
+              <a href="board_firm_staff.htm" >廠商聯絡人管理</a>
+            </div>
+
+            <!-- <a class='db2' href="">第一層選單</a> -->
+          </div>
+        </div>
+
+        <!-- 右內容 -->
+        <div class='block-r'>
+          <div class='centBoxs'>
+            <div class='boxsFull'>
+              <p class="t-blue-20 p-d-30">產品管理</p>
+              <a class='btn-outline-blue icon-add order-r' href="board_product_edit.html">&nbsp;新增產品</a>
+            </div>
+
+            <div class='boxsFull'>
+              <div class='boxs20'>
+                <p class='t-r-15 text-l p-d-10'>產品類別</p>
+                <div class="select-style">
+                  <select>
+                    <option value="">請選擇</option>
+                    <option value="">產品類別01</option>
+                    <option value="">產品類別02</option>
+                    <option value="">產品類別03</option>
+                  </select>
+                </div>
+              </div>
+              <div class='boxs20'>
+                <p class='t-r-15 text-l p-d-10'>關鍵字</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
+              </div>
+            </div>
+
+            <div class='boxsFull m-td-25'>
+              <a class='btn-half-blue icon-search order-r' href="index.html">&nbsp;搜尋</a>
+            </div>
+
+            <!-- 按下搜尋後會出現的元件。開始 -->
+            <i class='splitLine_bl'></i>
+
+            <div class='boxsFull'>
+              <p class="t-black-20 p-d-30">搜尋結果</p>
+            </div>
+            <!-- 按下搜尋後會出現的元件。結束 -->
+
+            <div class='boxsFull'>
+              <div class='table-header'>
+                <p class='table-box10'>&nbsp;</p>
+                <p class='table-box20'>產品類別</p>
+                <p class='table-box20'>產品名稱</p>
+                <p class='table-box10'>排&nbsp;序</p>
+                <p class='table-box20'>對應窗口</p>
+                <p class='table-box20'>操&nbsp;作</p>
+              </div>
+              <div class='table-body'>
+                <p class='table-box10'><img class='proListImg' src="img/pro.png"></p>
+                <p class='table-box20'>產品類別一</p>
+                <p class='table-box20 text-l'>
+                  中文名稱中文名稱中文名稱中文</br>
+                  Lorem Ipsum is simply dummy text of.
+                </p>
+                <p class='table-box10'>001</p>
+                <div class='table-box20'>
+                  <div class="boxsFull m-d-10">
+                    <button class='btn-half-blueG icon-eye'>&nbsp;供應商</button>
+                  </div>
+                  <div class="boxsFull noneFloat">
+                    <button class='btn-half-blueG icon-eye'>&nbsp;聯絡人</button>
+                  </div>
+                </div>
+                <p class='table-box20 '>
+                  <a class='iconLink linkGrey icon-eye' href="board_product_category_edit2.html"></a>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_product_category_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              
+            </div>
+
+            <div class='boxsFull m-td-25'>
+              <div class='numBox'>
+                <p class='t-page'>Page</p>
+                <label>
+                  <input class='input-f in-w-10' type="" name="">
+                </label>
+                <p class='t-page'>of 2,000</p>
+                <div class="numL icon-chevron-down"></div>
+                <div class="numR icon-chevron-down"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+

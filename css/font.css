@@ -12,4 +12,12 @@ p { padding: 0; margin: 0; }
 
 .t-r-15 { font-size: 1.15rem; }
 
+.t-grey-15 { font-size: 1.15rem; color: #8c9198; }
+
 .topName { display: inline-block; font-size: 1.38rem; line-height: 80px; padding-right: 15px; }
+
+.t-blue-16 { display: inline-block; font-size: 1.23rem; color: #006fff; }
+
+.t-blue-20 { display: inline-block; font-size: 1.53rem; color: #006fff; }
+
+.t-black-20 { display: inline-block; font-size: 1.53rem; color: #202e32; }

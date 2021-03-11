@@ -38,7 +38,8 @@
         <div class='rTagBox'>
           <div class='tagBox'>
             <a class='tag' href="menu.html">內網首頁</a>
-            <a class='tag' href="board_forget_pw.html">取回密碼</a>
+            <a class='tag' href="board_template.html">詢價範本管理</a>
+            <a class='tag'>新增詢價範本</a>
           </div>
         </div>
       </div>
@@ -49,10 +50,10 @@
           <div class='block-l-menuBox'>
             <span class="m-menu-t">系統管理者</span>
             <div class="m-smenu">
-              <a class='l-menu-active' href="board_forget_pw.html" >取回密碼</a>
+              <a href="board_forget_pw.html" >取回密碼</a>
               <a href="board_country.html">國別管理</a>
-              <a href="board_phrase.html" >片語管理</a>
-              <a href="board_template.html" >詢價範本管理</a>
+              <a href="board_phrase.html">片語管理</a>
+              <a class='l-menu-active' href="board_template.html">詢價範本管理</a>
             </div>
 
             <span class="m-menu-t">一般業務</span>
@@ -91,15 +92,36 @@
         <div class='block-r'>
           <div class='centBoxs'>
             <div class='boxsFull'>
-              <p class="t-blue-20 p-d-30">取回密碼</p>
+              <p class="t-blue-20 p-d-30">新增詢價範本</p>
             </div>
 
-            <div class='boxsFull'>
-              <p class='t-r-15 text-l p-d-15'>請輸入帳號使用郵件信箱，系統將發送一封認證信至使用者信箱</p>
-              <label>
-                <input class='input-f in-w-40 m-d-100' type="" name="" placeholder="請輸入帳號">
-              </label>
-              <button class='btn-half-orange icon-send'>&nbsp;寄出認證信</button>
+            <div class='boxsFull m-d-25'>
+              <div class='boxs20'>
+                <p class='t-r-15 text-l p-d-10'>範本標題</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
+              </div>
+              <div class='boxs20'>
+                <p class='t-r-15 text-l p-d-10'>類別</p>
+                <div class="select-style">
+                  <select>
+                    <option value="">請選擇</option>
+                    <option value="">類別01</option>
+                    <option value="">類別02</option>
+                    <option value="">類別03</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class='boxsFull m-d-25'>
+              <p class='t-r-15'>這個區塊放文字編輯器</p>
+            </div>
+
+            <div class='boxsFull m-td-25'>
+              <button class='btn-half-grey order-l'>清除重填</button>
+              <button class='btn-half-blue order-r'>儲&nbsp;存</button>
             </div>
           </div>
         </div>
@@ -107,9 +129,6 @@
     </div>
   </body>
 </html>
-
-
-
 
 
 

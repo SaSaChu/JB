@@ -38,7 +38,8 @@
         <div class='rTagBox'>
           <div class='tagBox'>
             <a class='tag' href="menu.html">內網首頁</a>
-            <a class='tag' href="board_forget_pw.html">取回密碼</a>
+            <a class='tag' href="board_product_category.html">產品類別管理</a>
+            <a class='tag'>新增產品類別</a>
           </div>
         </div>
       </div>
@@ -49,7 +50,7 @@
           <div class='block-l-menuBox'>
             <span class="m-menu-t">系統管理者</span>
             <div class="m-smenu">
-              <a class='l-menu-active' href="board_forget_pw.html" >取回密碼</a>
+              <a href="board_forget_pw.html" >取回密碼</a>
               <a href="board_country.html">國別管理</a>
               <a href="board_phrase.html" >片語管理</a>
               <a href="board_template.html" >詢價範本管理</a>
@@ -75,7 +76,7 @@
 
             <span class="m-menu-t">產品、人員管理</span>
             <div class="m-smenu">
-              <a href="board_product_category.html" >產品類別管理</a>
+              <a class='l-menu-active' href="board_product_category.html">產品類別管理</a>
               <a href="board_product.html" >產品管理</a>
               <a href="board_staff.html" >人員管理</a>
               <a href="board_client.html" >客戶管理</a>
@@ -91,15 +92,21 @@
         <div class='block-r'>
           <div class='centBoxs'>
             <div class='boxsFull'>
-              <p class="t-blue-20 p-d-30">取回密碼</p>
+              <p class="t-blue-20 p-d-30">新增產品類別</p>
             </div>
 
             <div class='boxsFull'>
-              <p class='t-r-15 text-l p-d-15'>請輸入帳號使用郵件信箱，系統將發送一封認證信至使用者信箱</p>
-              <label>
-                <input class='input-f in-w-40 m-d-100' type="" name="" placeholder="請輸入帳號">
-              </label>
-              <button class='btn-half-orange icon-send'>&nbsp;寄出認證信</button>
+              <div class='boxsFull m-td-25'>
+                <p class='t-r-15 text-l p-d-10'>類別名稱</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
+              </div>
+            </div>
+
+            <div class='boxsFull m-td-25'>
+              <button class='btn-half-grey order-l'>清除重填</button>
+              <button class='btn-half-blue order-r'>儲&nbsp;存</button>
             </div>
           </div>
         </div>
@@ -107,9 +114,6 @@
     </div>
   </body>
 </html>
-
-
-
 
 
 

@@ -13,7 +13,7 @@
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
   </head>
-  <body class="p-d-100">
+  <body>
     <header>
       <!-- 左 -->
       <div class='box50 text-l'>
@@ -38,7 +38,8 @@
         <div class='rTagBox'>
           <div class='tagBox'>
             <a class='tag' href="menu.html">內網首頁</a>
-            <a class='tag' href="board_forget_pw.html">取回密碼</a>
+            <a class='tag' href="board_country.html">國別管理</a>
+            <a class='tag'>新增國別</a>
           </div>
         </div>
       </div>
@@ -49,8 +50,8 @@
           <div class='block-l-menuBox'>
             <span class="m-menu-t">系統管理者</span>
             <div class="m-smenu">
-              <a class='l-menu-active' href="board_forget_pw.html" >取回密碼</a>
-              <a href="board_country.html">國別管理</a>
+              <a href="board_forget_pw.html" >取回密碼</a>
+              <a class='l-menu-active' href="board_country.html">國別管理</a>
               <a href="board_phrase.html" >片語管理</a>
               <a href="board_template.html" >詢價範本管理</a>
             </div>
@@ -91,15 +92,38 @@
         <div class='block-r'>
           <div class='centBoxs'>
             <div class='boxsFull'>
-              <p class="t-blue-20 p-d-30">取回密碼</p>
+              <p class="t-blue-20 p-d-30">新增國別</p>
             </div>
 
             <div class='boxsFull'>
-              <p class='t-r-15 text-l p-d-15'>請輸入帳號使用郵件信箱，系統將發送一封認證信至使用者信箱</p>
-              <label>
-                <input class='input-f in-w-40 m-d-100' type="" name="" placeholder="請輸入帳號">
-              </label>
-              <button class='btn-half-orange icon-send'>&nbsp;寄出認證信</button>
+              <div class='boxs30'>
+                <p class='t-r-15 text-l p-d-10'>國別中文</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
+              </div>
+              <div class='boxs30'>
+                <p class='t-r-15 text-l p-d-10'>國別英文</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
+              </div>
+              <div class='boxs30'>
+                <p class='t-r-15 text-l p-d-10'>編碼</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
+              </div>
+
+              <div class='boxsFull m-td-25'>
+                <p class='t-r-15 text-l p-d-10'>備註</p>
+                <textarea class='input-f' name="mytext" rows="6" cols="40" placeholder="請輸入" required></textarea>
+              </div>
+            </div>
+
+            <div class='boxsFull m-td-25'>
+              <button class='btn-half-grey order-l'>清除重填</button>
+              <button class='btn-half-blue order-r'>儲&nbsp;存</button>
             </div>
           </div>
         </div>
@@ -107,9 +131,6 @@
     </div>
   </body>
 </html>
-
-
-
 
 
 

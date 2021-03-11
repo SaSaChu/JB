@@ -4,6 +4,9 @@
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
 .input-f { display: inline-block; width: 100%; color: #202e32; font-size: 1.1rem; padding: 10px 15px; border: 1px solid #dcdbdc; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.input-f.in-w-10 { width: 50px; }
+.input-f.in-w-30 { width: 30%; }
+.input-f.in-w-40 { width: 40%; }
 .input-f::placeholder { color: #8c9198; }
 
 label { padding: 0; margin-right: 12px; cursor: pointer; }
@@ -17,3 +20,7 @@ label { padding: 0; margin-right: 12px; cursor: pointer; }
 .search-container input[type=text]::placeholder { color: #dcdbdc; }
 .search-container .searchBtn { float: left; padding: 7px 10px 5px 8px; font-size: 1.2rem; border: none; cursor: pointer; color: #dcdbdc; background-color: rgba(67, 151, 255, 0); -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .search-container .searchBtn:hover, .search-container .searchBtn:active { background-color: #4397ff; color: white; }
+
+.select-style { padding: 0; margin: 0; border: 1px solid #dcdbdc; width: 100%; border-radius: 3px; overflow: hidden; background-color: #fff; background: #fff url(../img/se_icon.svg) no-repeat 100% 50%; }
+.select-style select { font-size: 1.1rem; padding: 10px 15px; width: 100%; border: none; box-shadow: none; background-color: transparent; background-image: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; color: #8c9198; }
+.select-style select:focus { outline: none; color: #202e32; }

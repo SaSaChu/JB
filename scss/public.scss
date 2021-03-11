@@ -31,6 +31,10 @@ body {
   float: right;
 }
 
+.boxsBlock {
+  display: block;
+}
+
 .boxsInline {
   display: inline-block;
 }
@@ -78,6 +82,25 @@ body {
   @include clearfix();
 }
 
+.boxs30 {
+  display: inline-block;
+  width: calc(100% / 3 - 25px * 2 / 3);
+  float: left;
+
+  &:nth-child(3n+2) {
+    margin: 0 25px;
+  }
+}
+.boxs20 {
+  display: inline-block;
+  width: calc(100% / 2 - 25px * 1 / 2);
+  float: left;
+
+  &:nth-child(n+2) {
+    margin-left: 25px;
+  }
+}
+
 .iconBoxs {
   display: inline-block;
   float: right;
@@ -104,6 +127,12 @@ header {
   font-size: 1.15rem;
   color: $font-deep-black;
   background-color: white;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 
   &:before {
     display: inline-block;
@@ -143,6 +172,14 @@ header {
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+
+  .tagBoxL {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    padding-left: 30px;
   }
 }
 
@@ -291,9 +328,18 @@ header {
 .centBoxs {
   display: inline-block;
   width: 100%;
+  min-height: 800px;
   background-color: white;
   @include border-radius(3px);
   padding: 30px;
+  text-align: left;
+  @include clearfix();
+}
+
+.numBox {
+  display: inline-block;
+  float: right;
+  @include clearfix();
 }
 
 
