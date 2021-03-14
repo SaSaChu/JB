@@ -226,6 +226,14 @@ label { padding: 0; margin-right: 12px; cursor: pointer; }
 
 .order_boxs { display: inline-block; width: 100%; background-color: white; -moz-box-shadow: 0 1px 1px rgba(220, 219, 220, 0.5); -webkit-box-shadow: 0 1px 1px rgba(220, 219, 220, 0.5); box-shadow: 0 1px 1px rgba(220, 219, 220, 0.5); overflow: hidden; }
 
+.price_boxs { display: inline-block; width: 100%; padding: 10px 20px; -webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px; -moz-border-radius-topleft: 3px; -moz-border-radius-topright: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; background-color: #758499; color: white; text-align: left; font-size: 1.15rem; }
+.price_boxs:after { display: inline-block; content: '\e91c'; float: right; font-family: icon; line-height: 26px; }
+
+.price_boxsC { display: none; }
+.price_boxsC.price_boxsC_show { display: inline-block; width: 100%; background-color: white; padding: 15px 20px; }
+
+.price_boxsB { display: inline-block; width: 100%; height: 8px; width: 100%; background-color: white; -webkit-border-bottom-right-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-bottomright: 3px; -moz-border-radius-bottomleft: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; }
+
 body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #202e32; font-size: 13px; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; background-color: #edeff4; }
 
 .order-l { float: left; }

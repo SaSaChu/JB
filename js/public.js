@@ -8,6 +8,22 @@ $(function() {
     $('.block-r').toggleClass('block-r-show');
   });
 
+
+  // $('.price_boxs').click(function() {
+  //   $('.price_boxsC').each (function () {
+  //     var $that = $(this);
+  //     $(this).toggleClass ('price_boxsC_show');
+  //   });
+  // });
+
+   $('.boxsFull').each (function () {
+    var $that = $(this);
+    $that.find ('.price_boxs').click (function () {
+      $('.price_boxsC').toggleClass ('price_boxsC_show');
+    });
+  });
+
+
   $('.block-l-menuBox').each (function () {
     var $that = $(this);
     $that.find ('.m-menu-t').click (function () {
