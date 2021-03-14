@@ -9,17 +9,10 @@ $(function() {
   });
 
 
-  // $('.price_boxs').click(function() {
-  //   $('.price_boxsC').each (function () {
-  //     var $that = $(this);
-  //     $(this).toggleClass ('price_boxsC_show');
-  //   });
-  // });
-
-   $('.boxsFull').each (function () {
-    var $that = $(this);
-    $that.find ('.price_boxs').click (function () {
-      $('.price_boxsC').toggleClass ('price_boxsC_show');
+  $('.price_boxs').click(function() {
+    $(this).next('.price_boxsC').each (function () {
+      var $that = $(this);
+      $(this).toggleClass ('price_boxsC_show');
     });
   });
 
