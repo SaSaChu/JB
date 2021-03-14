@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+    <title>程炬集團-內部系統</title>
+
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+  </head>
+  <body class="p-d-100">
+    <header>
+      <!-- 左 -->
+      <div class='box50 text-l'>
+        <img class='p-t-16 p-r-15 order-l' src="img/logo.png">
+        <p class='topName'>詢價系統</p>
+      </div>
+      <!-- 右 -->
+      <div class='box50 text-r'>
+        <p class='topName'>嗨，王小明</p>
+        <div class='iconBoxs'>
+          <a class='iconLink linkBlue icon-account_box' href=""></a>
+          <a class='iconLink linkBlue m-l-10 icon-home' href="menu.html"></a>
+          <a class='iconLink linkBlue m-l-10 icon-exit_to_app' href=""></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 內容 -->
+    <div class='boxsFull_15'>
+      <div class='boxsFull'>
+        <div class='lMenu'>功能選單</div>
+        <div class='rTagBox'>
+          <div class="tagBoxL tagBoxC">
+            <div class="order-r">
+              <div class="boxsInline">
+                <input class='statusCheck' type="radio" id="" name="" value="">
+                <label class='statusCheck2' for="male">無效詢價</label>
+              </div>
+              <div class="boxsInline">
+                <input class='statusCheck' type="radio" id="" name="" value="">
+                <label class='statusCheck2' for="female">待處理</label>
+              </div>
+              <div class="boxsInline">
+                <input class='statusCheck' type="radio" id="" name="" value="">
+                <label class='statusCheck2' for="other">已完成</label>
+              </div>
+            </div>
+          </div>
+          <div class='tagBox'>
+            <a class='tag' href="menu.html">內網首頁</a>
+            <a class='tag' href="board_price_list.html">詢價單列表</a>
+            <a class='tag'>新增詢價單</a>
+          </div>
+        </div>
+      </div>
+
+      <div class='boxsFull'>
+        <!-- 左選單 -->
+        <div class='block-l'>
+          <div class='block-l-menuBox'>
+            <span class="m-menu-t">系統管理者</span>
+            <div class="m-smenu">
+              <a href="board_forget_pw.html" >取回密碼</a>
+              <a href="board_country.html">國別管理</a>
+              <a href="board_phrase.html">片語管理</a>
+              <a href="board_template.html">詢價範本管理</a>
+            </div>
+
+            <span class="m-menu-t">一般業務</span>
+            <div class="m-smenu">
+              <a class='l-menu-active' href="board_price_list.html">詢價列表</a>
+              <a href="board_sales_report.html">業務報表</a>
+            </div>
+
+            <span class="m-menu-t">資深業務</span>
+            <div class="m-smenu">
+              <a href="board_price_list.html">詢價列表</a>
+              <a href="board_sales_report.html">業務報表</a>
+            </div>
+
+            <span class="m-menu-t">採購</span>
+            <div class="m-smenu">
+              <a href="board_purchase_list.html">採購取件</a>
+              <a href="board_purchase_note.html">採購筆記</a>
+              <a href="board_purchase_report.html">採購報表</a>
+            </div>
+
+            <span class="m-menu-t">產品、人員管理</span>
+            <div class="m-smenu">
+              <a href="board_product_category.html" >產品類別管理</a>
+              <a href="board_product.html">產品管理</a>
+              <a href="board_staff.html">人員管理</a>
+              <a href="board_client.html">客戶管理</a>
+              <a href="board_firm.html" >廠商管理</a>
+              <a href="board_firm_staff.html">廠商聯絡人管理</a>
+            </div>
+
+            <!-- <a class='db2' href="">第一層選單</a> -->
+          </div>
+        </div>
+
+        <!-- 右內容 -->
+        <div class='block-r'>
+          <div class='centBoxs centNoW'>
+            <div class="centBoxRL">
+              <div class="boxsWhite m-d-25">
+                <div class='boxsFull m-d-25'>
+                  <div class='boxs30'>
+                    <p class='t-r-15 text-l p-d-10'>客戶簡碼</p>
+                    <label>
+                      <input class='input-f' type="" name="" placeholder="不接受中文">
+                    </label>
+                  </div>
+                  <div class='boxs30'>
+                    <p class='t-r-15 text-l p-d-10'>客戶國別</p>
+                    <div class="select-style">
+                      <select>
+                        <option value="">請選擇</option>
+                        <option value="">所屬單位01</option>
+                        <option value="">所屬單位02</option>
+                        <option value="">所屬單位03</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class='boxs30'>
+                    <p class='t-r-15 text-l p-d-10'>所屬業務</p>
+                    <div class="select-style">
+                      <select>
+                        <option value="">請選擇</option>
+                        <option value="">所屬單位01</option>
+                        <option value="">所屬單位02</option>
+                        <option value="">所屬單位03</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class='boxsFull m-d-25'>
+                  <p class='t-r-15 text-l p-d-10'>所屬單位</p>
+                  <div class="select-style">
+                    <select>
+                      <option value="">請選擇</option>
+                      <option value="">所屬單位01</option>
+                      <option value="">所屬單位02</option>
+                      <option value="">所屬單位03</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class='boxsFull'>
+                  <p class='t-r-15 text-l p-d-10'>詢價主旨</p>
+                  <label>
+                    <input class='input-f' type="" name="" placeholder="請輸入">
+                  </label>
+                </div>
+
+                <!-- 虛線 -->
+                <i class="splitLine_bl"></i>
+
+                <div class='boxsFull m-d-25'>
+                  <button class='btn-half-blue icon-icon_mail m-l-15 order-r'>&nbsp;選擇片語範本</button>
+                  <button class='btn-half-blue icon-icon_mail order-r'>&nbsp;選擇郵件範本</button>
+                </div>
+
+                <div class='boxsFull m-d-25'>
+                  <p class='t-r-15'>這個區塊放文字編輯器</p>
+                </div>
+
+                <div class='boxsFull m-d-25'>
+                  <p class='t-r-15 boxsInline order-l p-d-10'>產品照片</p>
+                  <p class='t-file-g boxsInline order-r p-d-10'>備註：附欓限制：最多五個檔案，總容量限制為2MB</p>
+                  <div class='updateBox'>
+                    <div class="box82_l">
+                      <div class='boxsFull m-d-10'>
+                        <img src="img/file_icon.svg">
+                        <p class="t-file">Hikoot_Clien_Pitch_V2.pdf</p>
+                        <button class="icon-cancel"></button>
+                      </div>
+                      <div class='boxsFull m-d-10'>
+                        <img src="img/file_icon.svg">
+                        <p class="t-file">Hikoot_Clien_Pitch_V2.pdf</p>
+                        <button class="icon-cancel"></button>
+                      </div>
+                      <div class='boxsFull'>
+                        <img src="img/file_icon.svg">
+                        <p class="t-file">Hikoot_Clien_Pitch_V2.pdf</p>
+                        <button class="icon-cancel"></button>
+                      </div>
+                    </div>
+                    <div class="box82_r">
+                      <button class='btn-outline-blue outlineNobg icon-add order-r'>&nbsp;新增檔案</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="boxsWhite">
+                <p class="t-blue-15 m-d-10">客戶備註：</p>
+                <textarea class='input-f m-d-25' name="mytext" rows="6" cols="40" placeholder="請輸入" required></textarea>
+                <button class='btn-outline-blue outlineNobg icon-add order-r'>&nbsp;新增備註</button>
+              </div>
+            </div>
+
+            <div class="centBoxRR">
+              <div class="boxsWhite boxW15 m-d-25">
+                <div class="select-style">
+                  <select>
+                    <option value="">廣告來源</option>
+                    <option value="">所屬單位01</option>
+                    <option value="">所屬單位02</option>
+                    <option value="">所屬單位03</option>
+                  </select>
+                </div>
+                </br>
+                <div class="select-style">
+                  <select>
+                    <option value="">版本清單</option>
+                    <option value="">所屬單位01</option>
+                    <option value="">所屬單位02</option>
+                    <option value="">所屬單位03</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class='boxsYellow'></div>
+            </div>
+
+            <div class="boxsYellow m-td-25">
+              <p class="t-black-15 m-d-10">寄送紀錄：</p>
+              <div class='boxsFull'>
+                <div class='table-header'>
+                  <p class='table-box10'>詢價單編號</p>
+                  <p class='table-box10'>版&nbsp;號</p>
+                  <p class='table-box20'>廠&nbsp;商</p>
+                  <p class='table-box10'>廠商聯絡人</p>
+                  <p class='table-box10'>取件人員</p>
+                  <p class='table-box10'>發送人</p>
+                  <p class='table-box10'>發送時間</p>
+                  <p class='table-box10'>取件時間</p>
+                  <p class='table-box10'>完成時間</p>
+                </div>
+                <!-- 01 -->
+                <div class='table-body'>
+                  <p class='table-box10'>JB213412093u324</p>
+                  <p class='table-box10'>001</p>
+                  <p class='table-box20'>真有錢有限公司</p>
+                  <p class='table-box10'>李彬彬</p>
+                  <p class='table-box10'>王小明</p>
+                  <p class='table-box10'>王小明</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                </div>
+                <!-- 02 -->
+                <div class='table-body'>
+                  <p class='table-box10'>JB213412093u324</p>
+                  <p class='table-box10'>001</p>
+                  <p class='table-box20'>真有錢有限公司</p>
+                  <p class='table-box10'>李彬彬</p>
+                  <p class='table-box10'>王小明</p>
+                  <p class='table-box10'>王小明</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                </div>
+                <!-- 03 -->
+                <div class='table-body'>
+                  <p class='table-box10'>JB213412093u324</p>
+                  <p class='table-box10'>001</p>
+                  <p class='table-box20'>真有錢有限公司</p>
+                  <p class='table-box10'>李彬彬</p>
+                  <p class='table-box10'>王小明</p>
+                  <p class='table-box10'>王小明</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                </div>
+                <!-- 04 -->
+                <div class='table-body'>
+                  <p class='table-box10'>JB213412093u324</p>
+                  <p class='table-box10'>001</p>
+                  <p class='table-box20'>真有錢有限公司</p>
+                  <p class='table-box10'>李彬彬</p>
+                  <p class='table-box10'>王小明</p>
+                  <p class='table-box10'>王小明</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                </div>
+                <!-- 05 -->
+                <div class='table-body'>
+                  <p class='table-box10'>JB213412093u324</p>
+                  <p class='table-box10'>001</p>
+                  <p class='table-box20'>真有錢有限公司</p>
+                  <p class='table-box10'>李彬彬</p>
+                  <p class='table-box10'>王小明</p>
+                  <p class='table-box10'>王小明</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                  <p class='table-box10'>2021/02/21 12:13:34</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='centBoxs centNoW'>
+            <div class="centBoxRL">
+              <button class='btn-half-blue order-r'>儲 存</button>
+              <button class='btn-half-blueG lh-30 order-l'>清除重填</button>
+            </div>
+            <div class="centBoxRR">
+              <button class='btn-half-orange icon-send wF'>&nbsp;寄出詢價單</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -13,7 +13,7 @@
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
   </head>
-  <body>
+  <body class="p-d-100">
     <header>
       <!-- 左 -->
       <div class='box50 text-l'>
@@ -38,8 +38,8 @@
         <div class='rTagBox'>
           <div class='tagBox'>
             <a class='tag' href="menu.html">內網首頁</a>
-            <a class='tag' href="board_phrase.html">片語管理</a>
-            <a class='tag'>編輯片語範本</a>
+            <a class='tag' href="board_staff.html">人員管理</a>
+            <a class='tag'>編輯人員</a>
           </div>
         </div>
       </div>
@@ -50,10 +50,10 @@
           <div class='block-l-menuBox'>
             <span class="m-menu-t">系統管理者</span>
             <div class="m-smenu">
-              <a href="board_forget_pw.html" >取回密碼</a>
+              <a href="board_forget_pw.html">取回密碼</a>
               <a href="board_country.html">國別管理</a>
-              <a class='l-menu-active' href="board_phrase.html">片語管理</a>
-              <a href="board_template.html" >詢價範本管理</a>
+              <a href="board_phrase.html">片語管理</a>
+              <a href="board_template.html">詢價範本管理</a>
             </div>
 
             <span class="m-menu-t">一般業務</span>
@@ -79,7 +79,7 @@
             <div class="m-smenu">
               <a href="board_product_category.html">產品類別管理</a>
               <a href="board_product.html">產品管理</a>
-              <a href="board_staff.html">人員管理</a>
+              <a class='l-menu-active' href="board_staff.html">人員管理</a>
               <a href="board_client.html">客戶管理</a>
               <a href="board_firm.html">廠商管理</a>
               <a href="board_firm_staff.html">廠商聯絡人管理</a>
@@ -93,23 +93,93 @@
         <div class='block-r'>
           <div class='centBoxs'>
             <div class='boxsFull'>
-              <p class="t-blue-20 p-d-30">編輯片語範本</p>
+              <p class="t-blue-20 p-d-30">編輯人員</p>
             </div>
 
-            <div class='boxsFull'>
-              <div class='boxsFull m-td-25'>
-                <p class='t-r-15 text-l p-d-10'>片語標題</p>
+            <div class='boxsFull m-d-25'>
+              <div class='boxs30'>
+                <p class='t-r-15 text-l p-d-10'>中文姓名</p>
                 <label>
-                  <input class='input-f' type="" name="" placeholder="片語標題片語標題片語標題片語標題">
+                  <input class='input-f' type="" name="" placeholder="請輸入">
                 </label>
               </div>
-
-              <div class='boxsFull m-td-25'>
-                <p class='t-r-15 text-l p-d-10'>片語內容</p>
-                <textarea class='input-f' name="mytext" rows="6" cols="40" placeholder="片語內容片語內容片語內容片語內容" required></textarea>
+              <div class='boxs30'>
+                <p class='t-r-15 text-l p-d-10'>英文姓名</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
+              </div>
+              <div class='boxs30'>
+                <p class='t-r-15 text-l p-d-10'>分機</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
               </div>
             </div>
 
+            <div class='boxsFull m-d-25'>
+              <div class='boxs30'>
+                <p class='t-r-15 text-l p-d-10'>職務</p>
+                <div class="select-style">
+                  <select>
+                    <option value="">請選擇</option>
+                    <option value="">類別01</option>
+                    <option value="">類別02</option>
+                    <option value="">類別03</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class='boxsFull m-t-25'>
+              <div class='boxsFull m-d-25'>
+                <div class="box37_l">
+                  <p class='t-r-15 text-l p-d-10'>詢價方式</p>
+                  <div class="select-style">
+                    <select>
+                      <option value="">請選擇</option>
+                      <option value="">類別01</option>
+                      <option value="">類別02</option>
+                      <option value="">類別03</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="box37_r">
+                  <p class='t-r-15 text-l p-d-10'>&nbsp;</p>
+                  <div class="box19_l">
+                    <label>
+                      <input class='input-f' type="" name="" placeholder="請輸入">
+                    </label>
+                  </div>
+                  <div class="box19_r">
+                    <button class="icon-add_circle"></button>
+                  </div>
+                </div>
+              </div>
+              <div class='boxsFull m-d-25'>
+                <div class="box37_l">
+                  <div class="select-style">
+                    <select>
+                      <option value="">請選擇</option>
+                      <option value="">類別01</option>
+                      <option value="">類別02</option>
+                      <option value="">類別03</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="box37_r">
+                  <div class="box19_l">
+                    <label>
+                      <input class='input-f' type="" name="" placeholder="請輸入">
+                    </label>
+                  </div>
+                  <div class="box19_r">
+                    <button class="icon-add_circle"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             <div class='boxsFull m-td-25'>
               <button class='btn-half-grey order-l'>清除重填</button>
               <button class='btn-half-blue order-r'>儲&nbsp;存</button>

@@ -20,6 +20,8 @@
 
 .m-td-25 { margin-top: 25px; margin-bottom: 25px; }
 
+.m-t-25 { margin-top: 25px; }
+
 .m-d-25 { margin-bottom: 25px; }
 
 .m-d-20 { margin-bottom: 20px; }
@@ -31,3 +33,5 @@
 .m-l-15 { margin-left: 15px; }
 
 .m-l-10 { margin-left: 10px; }
+
+.m-lr-10 { margin: 0 10px; }

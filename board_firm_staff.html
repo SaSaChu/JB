@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+    <title>程炬集團-內部系統</title>
+
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+  </head>
+  <body class="p-d-100">
+    <header>
+      <!-- 左 -->
+      <div class='box50 text-l'>
+        <img class='p-t-16 p-r-15 order-l' src="img/logo.png">
+        <p class='topName'>詢價系統</p>
+      </div>
+      <!-- 右 -->
+      <div class='box50 text-r'>
+        <p class='topName'>嗨，王小明</p>
+        <div class='iconBoxs'>
+          <a class='iconLink linkBlue icon-account_box' href=""></a>
+          <a class='iconLink linkBlue m-l-10 icon-home' href="menu.html"></a>
+          <a class='iconLink linkBlue m-l-10 icon-exit_to_app' href=""></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 內容 -->
+    <div class='boxsFull_15'>
+      <div class='boxsFull'>
+        <div class='lMenu'>功能選單</div>
+        <div class='rTagBox'>
+          <div class='tagBox'>
+            <a class='tag' href="menu.html">內網首頁</a>
+            <a class='tag' href="board_firm_staff.html">廠商聯絡人管理</a>
+          </div>
+        </div>
+      </div>
+
+      <div class='boxsFull'>
+        <!-- 左選單 -->
+        <div class='block-l'>
+          <div class='block-l-menuBox'>
+            <span class="m-menu-t">系統管理者</span>
+            <div class="m-smenu">
+              <a href="board_forget_pw.html">取回密碼</a>
+              <a href="board_country.html">國別管理</a>
+              <a href="board_phrase.html">片語管理</a>
+              <a href="board_template.html">詢價範本管理</a>
+            </div>
+
+            <span class="m-menu-t">一般業務</span>
+            <div class="m-smenu">
+              <a href="board_price_list.html">詢價列表</a>
+              <a href="board_sales_report.html">業務報表</a>
+            </div>
+
+            <span class="m-menu-t">資深業務</span>
+            <div class="m-smenu">
+              <a href="board_price_list.html">詢價列表</a>
+              <a href="board_sales_report.html">業務報表</a>
+            </div>
+
+            <span class="m-menu-t">採購</span>
+            <div class="m-smenu">
+              <a href="board_purchase_list.html">採購取件</a>
+              <a href="board_purchase_note.html">採購筆記</a>
+              <a href="board_purchase_report.html">採購報表</a>
+            </div>
+
+            <span class="m-menu-t">產品、人員管理</span>
+            <div class="m-smenu">
+              <a href="board_product_category.html">產品類別管理</a>
+              <a href="board_product.html">產品管理</a>
+              <a href="board_staff.html">人員管理</a>
+              <a href="board_client.html">客戶管理</a>
+              <a href="board_firm.html">廠商管理</a>
+              <a class='l-menu-active' href="board_firm_staff.html">廠商聯絡人管理</a>
+            </div>
+
+            <!-- <a class='db2' href="">第一層選單</a> -->
+          </div>
+        </div>
+
+        <!-- 右內容 -->
+        <div class='block-r'>
+          <div class='centBoxs'>
+            <div class='boxsFull'>
+              <p class="t-blue-20 p-d-30">廠商聯絡人管理</p>
+              <a class='btn-outline-blue icon-add order-r' href="board_firm_staff_edit.html">&nbsp;新增聯絡人</a>
+            </div>
+
+            <div class='boxsFull'>
+              <div class='boxs20'>
+                <p class='t-r-15 text-l p-d-10'>廠商類別</p>
+                <div class="select-style">
+                  <select>
+                    <option value="">請選擇</option>
+                    <option value="">產品類別01</option>
+                    <option value="">產品類別02</option>
+                    <option value="">產品類別03</option>
+                  </select>
+                </div>
+              </div>
+              <div class='boxs20'>
+                <p class='t-r-15 text-l p-d-10'>關鍵字</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
+              </div>
+            </div>
+
+            <div class='boxsFull m-td-25'>
+              <button class='btn-half-blue icon-search order-r'>&nbsp;搜尋</button>
+            </div>
+
+            <!-- 按下搜尋後會出現的元件。開始 -->
+            <i class='splitLine_bl'></i>
+
+            <div class='boxsFull'>
+              <p class="t-black-20 p-d-30">搜尋結果</p>
+            </div>
+            <!-- 按下搜尋後會出現的元件。結束 -->
+
+            <div class='boxsFull'>
+              <div class='table-header'>
+                <p class='table-box20'>廠商簡稱</p>
+                <p class='table-box20'>採購姓名</p>
+                <p class='table-box20'>聯絡電話</p>
+                <p class='table-box20'>電子郵件</p>
+                <p class='table-box20'>操&nbsp;作</p>
+              </div>
+              <!-- 01 -->
+              <div class='table-body'>
+                <p class='table-box20'>好有錢</p>
+                <p class='table-box20'>王大明</p>
+                <p class='table-box20'>3312-3345</p>
+                <p class='table-box20'>331abc@gmail.com</p>
+                <p class='table-box20'>
+                  <div class='iconLink linkGrey icon-eye showModel' data-id='1'></div>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_firm_staff_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 02 -->
+              <div class='table-body'>
+                <p class='table-box20'>好有錢</p>
+                <p class='table-box20'>王大明</p>
+                <p class='table-box20'>3312-3345</p>
+                <p class='table-box20'>331abc@gmail.com</p>
+                <p class='table-box20'>
+                  <div class='iconLink linkGrey icon-eye showModel' data-id='2'></div>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_firm_staff_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 03 -->
+              <div class='table-body'>
+                <p class='table-box20'>好有錢</p>
+                <p class='table-box20'>王大明</p>
+                <p class='table-box20'>3312-3345</p>
+                <p class='table-box20'>331abc@gmail.com</p>
+                <p class='table-box20'>
+                  <div class='iconLink linkGrey icon-eye showModel' data-id='3'></div>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_firm_staff_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 04 -->
+              <div class='table-body'>
+                <p class='table-box20'>好有錢</p>
+                <p class='table-box20'>王大明</p>
+                <p class='table-box20'>3312-3345</p>
+                <p class='table-box20'>331abc@gmail.com</p>
+                <p class='table-box20'>
+                  <div class='iconLink linkGrey icon-eye showModel' data-id='4'></div>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_firm_staff_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 05 -->
+              <div class='table-body'>
+                <p class='table-box20'>好有錢</p>
+                <p class='table-box20'>王大明</p>
+                <p class='table-box20'>3312-3345</p>
+                <p class='table-box20'>331abc@gmail.com</p>
+                <p class='table-box20'>
+                  <div class='iconLink linkGrey icon-eye showModel' data-id='5'></div>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_firm_staff_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 06 -->
+              <div class='table-body'>
+                <p class='table-box20'>好有錢</p>
+                <p class='table-box20'>王大明</p>
+                <p class='table-box20'>3312-3345</p>
+                <p class='table-box20'>331abc@gmail.com</p>
+                <p class='table-box20'>
+                  <div class='iconLink linkGrey icon-eye showModel' data-id='6'></div>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_firm_staff_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 07 -->
+              <div class='table-body'>
+                <p class='table-box20'>好有錢</p>
+                <p class='table-box20'>王大明</p>
+                <p class='table-box20'>3312-3345</p>
+                <p class='table-box20'>331abc@gmail.com</p>
+                <p class='table-box20'>
+                  <div class='iconLink linkGrey icon-eye showModel' data-id='7'></div>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_firm_staff_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 08 -->
+              <div class='table-body'>
+                <p class='table-box20'>好有錢</p>
+                <p class='table-box20'>王大明</p>
+                <p class='table-box20'>3312-3345</p>
+                <p class='table-box20'>331abc@gmail.com</p>
+                <p class='table-box20'>
+                  <div class='iconLink linkGrey icon-eye showModel' data-id='8'></div>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_firm_staff_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 09 -->
+              <div class='table-body'>
+                <p class='table-box20'>好有錢</p>
+                <p class='table-box20'>王大明</p>
+                <p class='table-box20'>3312-3345</p>
+                <p class='table-box20'>331abc@gmail.com</p>
+                <p class='table-box20'>
+                  <div class='iconLink linkGrey icon-eye showModel' data-id='9'></div>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_firm_staff_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 10 -->
+              <div class='table-body'>
+                <p class='table-box20'>好有錢</p>
+                <p class='table-box20'>王大明</p>
+                <p class='table-box20'>3312-3345</p>
+                <p class='table-box20'>331abc@gmail.com</p>
+                <p class='table-box20'>
+                  <div class='iconLink linkGrey icon-eye showModel' data-id='10'></div>
+                  <a class='iconLink linkGrey icon-create m-l-10' href="board_firm_staff_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+            </div>
+
+            <div class='boxsFull m-td-25'>
+              <div class='numBox'>
+                <p class='t-page'>Page</p>
+                <label>
+                  <input class='input-f in-w-10' type="" name="">
+                </label>
+                <p class='t-page'>of 2,000</p>
+                <div class="numL icon-chevron-down"></div>
+                <div class="numR icon-chevron-down"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 光箱 -->
+    <div id="myModel" class="model">
+      <div class='ac_outer'>
+        <!-- 光箱01 -->
+        <div class='model_boxs box_1'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">01王大明</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull m-d-25'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司名稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢股份有限公司</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司簡稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢</p>
+            </div>
+          </div>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>電子郵件：</p>
+              <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>聯絡電話：</p>
+              <p class='t-grey-15 text-l p-d-10'>3312-3345</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>備註：</p>
+            <p class='t-grey-15 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+          </div>
+        </div>
+        <!-- 光箱02 -->
+        <div class='model_boxs box_2'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">02王大明</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull m-d-25'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司名稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢股份有限公司</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司簡稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢</p>
+            </div>
+          </div>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>電子郵件：</p>
+              <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>聯絡電話：</p>
+              <p class='t-grey-15 text-l p-d-10'>3312-3345</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>備註：</p>
+            <p class='t-grey-15 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+          </div>
+        </div>
+        <!-- 光箱03 -->
+        <div class='model_boxs box_3'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">03王大明</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull m-d-25'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司名稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢股份有限公司</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司簡稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢</p>
+            </div>
+          </div>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>電子郵件：</p>
+              <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>聯絡電話：</p>
+              <p class='t-grey-15 text-l p-d-10'>3312-3345</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>備註：</p>
+            <p class='t-grey-15 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+          </div>
+        </div>
+        <!-- 光箱04 -->
+        <div class='model_boxs box_4'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">04王大明</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull m-d-25'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司名稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢股份有限公司</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司簡稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢</p>
+            </div>
+          </div>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>電子郵件：</p>
+              <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>聯絡電話：</p>
+              <p class='t-grey-15 text-l p-d-10'>3312-3345</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>備註：</p>
+            <p class='t-grey-15 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+          </div>
+        </div>
+        <!-- 光箱05 -->
+        <div class='model_boxs box_5'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">05王大明</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull m-d-25'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司名稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢股份有限公司</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司簡稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢</p>
+            </div>
+          </div>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>電子郵件：</p>
+              <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>聯絡電話：</p>
+              <p class='t-grey-15 text-l p-d-10'>3312-3345</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>備註：</p>
+            <p class='t-grey-15 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+          </div>
+        </div>
+        <!-- 光箱06 -->
+        <div class='model_boxs box_6'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">06王大明</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull m-d-25'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司名稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢股份有限公司</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司簡稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢</p>
+            </div>
+          </div>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>電子郵件：</p>
+              <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>聯絡電話：</p>
+              <p class='t-grey-15 text-l p-d-10'>3312-3345</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>備註：</p>
+            <p class='t-grey-15 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+          </div>
+        </div>
+        <!-- 光箱07 -->
+        <div class='model_boxs box_7'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">07王大明</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull m-d-25'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司名稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢股份有限公司</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司簡稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢</p>
+            </div>
+          </div>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>電子郵件：</p>
+              <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>聯絡電話：</p>
+              <p class='t-grey-15 text-l p-d-10'>3312-3345</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>備註：</p>
+            <p class='t-grey-15 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+          </div>
+        </div>
+        <!-- 光箱08 -->
+        <div class='model_boxs box_8'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">08王大明</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull m-d-25'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司名稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢股份有限公司</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司簡稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢</p>
+            </div>
+          </div>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>電子郵件：</p>
+              <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>聯絡電話：</p>
+              <p class='t-grey-15 text-l p-d-10'>3312-3345</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>備註：</p>
+            <p class='t-grey-15 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+          </div>
+        </div>
+        <!-- 光箱09 -->
+        <div class='model_boxs box_9'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">09王大明</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull m-d-25'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司名稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢股份有限公司</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司簡稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢</p>
+            </div>
+          </div>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>電子郵件：</p>
+              <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>聯絡電話：</p>
+              <p class='t-grey-15 text-l p-d-10'>3312-3345</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>備註：</p>
+            <p class='t-grey-15 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+          </div>
+        </div>
+        <!-- 光箱10 -->
+        <div class='model_boxs box_10'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">10王大明</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull m-d-25'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司名稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢股份有限公司</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商公司簡稱：</p>
+              <p class='t-grey-15 text-l p-d-10'>好有錢</p>
+            </div>
+          </div>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>電子郵件：</p>
+              <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>聯絡電話：</p>
+              <p class='t-grey-15 text-l p-d-10'>3312-3345</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>備註：</p>
+            <p class='t-grey-15 text-l'>備註文字備註文字備註文字備註文字備註文字備註文字備註文字</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+

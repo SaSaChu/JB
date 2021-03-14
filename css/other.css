@@ -1,5 +1,14 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+#myModel { display: none; justify-content: center; align-items: center; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
+#myModel.showModel { display: flex; }
+#myModel .ac_outer { width: 100%; }
+#myModel .ac_outer .model_boxs { display: none; width: 100%; max-width: 600px; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; *zoom: 1; margin: 50px 0; padding: 20px 15px; }
+#myModel .ac_outer .model_boxs.show { display: inline-block; }
+#myModel .ac_outer .model_boxs:after { display: table; content: ""; line-height: 0; clear: both; }
+@media screen and (max-width: 449px) and (min-width: 0) { #myModel .ac_outer .model_boxs { max-width: auto; margin: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; } }
+#myModel .ac_outer .model_boxs .t-close { display: inline-block; font-size: 1.38rem; font-weight: bold; cursor: pointer; color: #202e32; float: right; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+
 .menuArea p { display: inline-block; font-size: 1.2rem; color: #4397ff; }
 .menuArea p.icon-menu_icon01, .menuArea p.icon-menu_icon02svg { font-size: 3rem; }
 .menuArea:hover, .menuArea:active { background-color: #4397ff; }
@@ -26,6 +35,7 @@
 .noneFloat { float: none !important; }
 
 .table-box10 { width: 10%; }
+.table-box10.t-red { color: #ff6d4a; }
 
 .table-box20 { width: 20%; }
 
@@ -45,4 +55,11 @@
 
 .splitLine_bl { display: inline-block; width: 100%; border-bottom: 1px dotted rgba(67, 151, 255, 0.3); margin: 25px 0; }
 
+.splitLine_title { display: inline-block; width: 100%; border-bottom: 2px solid rgba(67, 151, 255, 0.3); margin: 25px 0; }
+
 .proListImg { display: inline-block; width: 100%; max-width: 80px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #dcdbdc; overflow: hidden; }
+
+.order_info { display: inline-block; width: 100%; display: none; }
+.order_info.order_info_show { display: inline-block; }
+
+.order_boxs { display: inline-block; width: 100%; background-color: white; -moz-box-shadow: 0 1px 1px rgba(220, 219, 220, 0.5); -webkit-box-shadow: 0 1px 1px rgba(220, 219, 220, 0.5); box-shadow: 0 1px 1px rgba(220, 219, 220, 0.5); overflow: hidden; }

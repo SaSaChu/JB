@@ -45,22 +45,32 @@ button {
   &.icon-search {
     line-height: 30px;
   }
+
+  &.icon-icon_mail {line-height: 30px;}
 }
 
 .btn-half-grey {
   background-color: $grey_l;
+
+  &.lh-30 {
+    line-height: 30px;
+  } 
 }
 
 .btn-half-orange {
   background-color: $orange;
 
-  &.icon-send { line-height: 29px; }
+  &.icon-send { line-height: 29px;}
+  &.wF {
+    width: 100%;
+  }
 }
 
 .btn-half-blueG {
   background-color: $blueGrey_l_50;
 
   &.icon-eye {line-height: 24px;}
+  &.icon-icon04 {line-height: 24px;}
 }
 
 
@@ -80,6 +90,16 @@ button {
 
   &.icon-add {
     line-height: 30px;
+  }
+
+  &.outlineNobg {
+    padding: 5px 20px;
+    background-color: white;
+
+    &:hover, &:active {
+      background-color: $blue_l;
+      color: white;
+    }
   }
 }
 
@@ -173,7 +193,62 @@ button {
 }
 
 
+.icon-cancel {
+  display: inline-block;
+  color: $red;
+  background-color: transparent;
+  margin-top: 11px;
+}
 
+
+.icon-add_circle {
+  display: inline-block;
+  color: $blue;
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+.link_order_info {
+  display: inline-block;
+  cursor: pointer;
+  width: 120px;
+  font-size: 1.1rem;
+  color: $font-deep-black;
+  background-color: $blue_l_30;
+  @include transition(all .3s);
+  // border-bottom: 2px solid white;
+  padding: 10px 0;
+  float: left;
+  text-align: center;
+  margin-right: 5px;
+
+  &:first-child {
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    border-top-left-radius: 3px;
+  }
+
+  &:last-child {
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  &.loi_s {
+    color: white;
+    background-color: $blue_l;
+
+    &:hover, &:active {
+      color: white;
+      background-color: $blue_l;
+    }
+  }
+
+  &:hover, &:active {
+    color: white;
+    background-color: $blue_l;
+  }
+}
 
 
 

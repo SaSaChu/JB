@@ -15,7 +15,11 @@ p {
 
 .line-h-80 {
   line-height: 80px;
-} 
+}
+
+.line-h-43 {
+  line-height: 43px;
+}
 
 .menu-title {
   text-align: left;
@@ -37,6 +41,18 @@ p {
 .t-grey-15 {
   font-size: 1.15rem;
   color: $font-grey;
+}
+
+.t-black-15 {
+  display: inline-block;
+  font-size: 1.15rem;
+  color: $font-deep-black;
+}
+
+.t-blue-15 {
+  display: inline-block;
+  font-size: 1.15rem;
+  color: $blue;
 }
 
 .topName {
@@ -64,6 +80,21 @@ p {
   color: $font-deep-black;
 }
 
+.t-file {
+  display: inline-block;
+  font-size: 1rem;
+  color: $font-deep-black;
+  line-height: 35px;
+  margin: 0 10px;
+}
+
+.t-file-g {
+  display: inline-block;
+  font-size: 1rem;
+  color: $font-grey;
+  line-height: 35px;
+  margin: 0 10px;
+}
 
 
 

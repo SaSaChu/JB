@@ -123,7 +123,19 @@ label {
   }
 }
 
-
+.statusCheck {
+  display: inline-block;
+  height: 18px;
+  appearance:button;
+  -moz-appearance:button; /* Firefox */
+  -webkit-appearance:button; 
+}
+.statusCheck2 {
+  display: inline-block;
+  margin-left: 0;
+  font-size: 1rem;
+  color: $font-deep-black;
+}
 
 
 

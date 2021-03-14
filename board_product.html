@@ -49,38 +49,39 @@
           <div class='block-l-menuBox'>
             <span class="m-menu-t">系統管理者</span>
             <div class="m-smenu">
-              <a href="board_forget_pw.html" >取回密碼</a>
+              <a href="board_forget_pw.html">取回密碼</a>
               <a href="board_country.html">國別管理</a>
-              <a href="board_phrase.html" >片語管理</a>
-              <a href="board_template.html" >詢價範本管理</a>
+              <a href="board_phrase.html">片語管理</a>
+              <a href="board_template.html">詢價範本管理</a>
             </div>
 
             <span class="m-menu-t">一般業務</span>
             <div class="m-smenu">
-              <a href="board_price_list.html" >詢價列表</a>
-              <a href="board_sales_report.html" >業務報表</a>
+              <a href="board_price_list.html">詢價列表</a>
+              <a href="board_sales_report.html">業務報表</a>
             </div>
 
             <span class="m-menu-t">資深業務</span>
             <div class="m-smenu">
-              <a href="board_price_list_v2.html" >詢價列表</a>
-              <a href="board_sales_report_v2.html" >業務報表</a>
+              <a href="board_price_list.html">詢價列表</a>
+              <a href="board_sales_report.html">業務報表</a>
             </div>
 
             <span class="m-menu-t">採購</span>
             <div class="m-smenu">
-              <a href="board_purchase_list.html" >採購取件</a>
-              <a href="board_purchase_report.html" >採購報表</a>
+              <a href="board_purchase_list.html">採購取件</a>
+              <a href="board_purchase_note.html">採購筆記</a>
+              <a href="board_purchase_report.html">採購報表</a>
             </div>
 
             <span class="m-menu-t">產品、人員管理</span>
             <div class="m-smenu">
               <a href="board_product_category.html">產品類別管理</a>
               <a class='l-menu-active' href="board_product.html">產品管理</a>
-              <a href="board_staff.html" >人員管理</a>
-              <a href="board_client.html" >客戶管理</a>
-              <a href="board_firm.html" >廠商管理</a>
-              <a href="board_firm_staff.htm" >廠商聯絡人管理</a>
+              <a href="board_staff.html">人員管理</a>
+              <a href="board_client.html">客戶管理</a>
+              <a href="board_firm.html">廠商管理</a>
+              <a href="board_firm_staff.html">廠商聯絡人管理</a>
             </div>
 
             <!-- <a class='db2' href="">第一層選單</a> -->
@@ -116,7 +117,7 @@
             </div>
 
             <div class='boxsFull m-td-25'>
-              <a class='btn-half-blue icon-search order-r' href="index.html">&nbsp;搜尋</a>
+              <button class='btn-half-blue icon-search order-r'>&nbsp;搜尋</button>
             </div>
 
             <!-- 按下搜尋後會出現的元件。開始 -->
@@ -136,6 +137,7 @@
                 <p class='table-box20'>對應窗口</p>
                 <p class='table-box20'>操&nbsp;作</p>
               </div>
+              <!-- 01 -->
               <div class='table-body'>
                 <p class='table-box10'><img class='proListImg' src="img/pro.png"></p>
                 <p class='table-box20'>產品類別一</p>
@@ -146,19 +148,215 @@
                 <p class='table-box10'>001</p>
                 <div class='table-box20'>
                   <div class="boxsFull m-d-10">
-                    <button class='btn-half-blueG icon-eye'>&nbsp;供應商</button>
+                    <div class='btn-half-blueG icon-eye showModel' data-id='1'>&nbsp;供應商</div>
                   </div>
                   <div class="boxsFull noneFloat">
-                    <button class='btn-half-blueG icon-eye'>&nbsp;聯絡人</button>
+                    <button class='btn-half-blueG icon-eye showModel' data-id='2'>&nbsp;聯絡人</button>
                   </div>
                 </div>
                 <p class='table-box20 '>
-                  <a class='iconLink linkGrey icon-eye' href="board_product_category_edit2.html"></a>
-                  <a class='iconLink linkGrey icon-create m-l-10' href="board_product_category_edit2.html"></a>
+                  <a class='iconLink linkGrey icon-create' href="board_product_edit2.html"></a>
                   <button class='iconLink linkGrey icon-trash m-l-10'></button>
                 </p>
               </div>
-              
+              <!-- 02 -->
+              <div class='table-body'>
+                <p class='table-box10'><img class='proListImg' src="img/pro.png"></p>
+                <p class='table-box20'>產品類別一</p>
+                <p class='table-box20 text-l'>
+                  中文名稱中文名稱中文名稱中文</br>
+                  Lorem Ipsum is simply dummy text of.
+                </p>
+                <p class='table-box10'>001</p>
+                <div class='table-box20'>
+                  <div class="boxsFull m-d-10">
+                    <div class='btn-half-blueG icon-eye showModel' data-id='3'>&nbsp;供應商</div>
+                  </div>
+                  <div class="boxsFull noneFloat">
+                    <button class='btn-half-blueG icon-eye showModel' data-id='4'>&nbsp;聯絡人</button>
+                  </div>
+                </div>
+                <p class='table-box20 '>
+                  <a class='iconLink linkGrey icon-create' href="board_product_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 03 -->
+              <div class='table-body'>
+                <p class='table-box10'><img class='proListImg' src="img/pro.png"></p>
+                <p class='table-box20'>產品類別一</p>
+                <p class='table-box20 text-l'>
+                  中文名稱中文名稱中文名稱中文</br>
+                  Lorem Ipsum is simply dummy text of.
+                </p>
+                <p class='table-box10'>001</p>
+                <div class='table-box20'>
+                  <div class="boxsFull m-d-10">
+                    <div class='btn-half-blueG icon-eye showModel' data-id='5'>&nbsp;供應商</div>
+                  </div>
+                  <div class="boxsFull noneFloat">
+                    <button class='btn-half-blueG icon-eye showModel' data-id='6'>&nbsp;聯絡人</button>
+                  </div>
+                </div>
+                <p class='table-box20 '>
+                  <a class='iconLink linkGrey icon-create' href="board_product_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 04 -->
+              <div class='table-body'>
+                <p class='table-box10'><img class='proListImg' src="img/pro.png"></p>
+                <p class='table-box20'>產品類別一</p>
+                <p class='table-box20 text-l'>
+                  中文名稱中文名稱中文名稱中文</br>
+                  Lorem Ipsum is simply dummy text of.
+                </p>
+                <p class='table-box10'>001</p>
+                <div class='table-box20'>
+                  <div class="boxsFull m-d-10">
+                    <div class='btn-half-blueG icon-eye showModel' data-id='7'>&nbsp;供應商</div>
+                  </div>
+                  <div class="boxsFull noneFloat">
+                    <button class='btn-half-blueG icon-eye showModel' data-id='8'>&nbsp;聯絡人</button>
+                  </div>
+                </div>
+                <p class='table-box20 '>
+                  <a class='iconLink linkGrey icon-create' href="board_product_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 05 -->
+              <div class='table-body'>
+                <p class='table-box10'><img class='proListImg' src="img/pro.png"></p>
+                <p class='table-box20'>產品類別一</p>
+                <p class='table-box20 text-l'>
+                  中文名稱中文名稱中文名稱中文</br>
+                  Lorem Ipsum is simply dummy text of.
+                </p>
+                <p class='table-box10'>001</p>
+                <div class='table-box20'>
+                  <div class="boxsFull m-d-10">
+                    <div class='btn-half-blueG icon-eye showModel' data-id='9'>&nbsp;供應商</div>
+                  </div>
+                  <div class="boxsFull noneFloat">
+                    <button class='btn-half-blueG icon-eye showModel' data-id='10'>&nbsp;聯絡人</button>
+                  </div>
+                </div>
+                <p class='table-box20 '>
+                  <a class='iconLink linkGrey icon-create' href="board_product_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 06 -->
+              <div class='table-body'>
+                <p class='table-box10'><img class='proListImg' src="img/pro.png"></p>
+                <p class='table-box20'>產品類別一</p>
+                <p class='table-box20 text-l'>
+                  中文名稱中文名稱中文名稱中文</br>
+                  Lorem Ipsum is simply dummy text of.
+                </p>
+                <p class='table-box10'>001</p>
+                <div class='table-box20'>
+                  <div class="boxsFull m-d-10">
+                    <div class='btn-half-blueG icon-eye showModel' data-id='11'>&nbsp;供應商</div>
+                  </div>
+                  <div class="boxsFull noneFloat">
+                    <button class='btn-half-blueG icon-eye showModel' data-id='12'>&nbsp;聯絡人</button>
+                  </div>
+                </div>
+                <p class='table-box20 '>
+                  <a class='iconLink linkGrey icon-create' href="board_product_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 07 -->
+              <div class='table-body'>
+                <p class='table-box10'><img class='proListImg' src="img/pro.png"></p>
+                <p class='table-box20'>產品類別一</p>
+                <p class='table-box20 text-l'>
+                  中文名稱中文名稱中文名稱中文</br>
+                  Lorem Ipsum is simply dummy text of.
+                </p>
+                <p class='table-box10'>001</p>
+                <div class='table-box20'>
+                  <div class="boxsFull m-d-10">
+                    <div class='btn-half-blueG icon-eye showModel' data-id='13'>&nbsp;供應商</div>
+                  </div>
+                  <div class="boxsFull noneFloat">
+                    <button class='btn-half-blueG icon-eye showModel' data-id='14'>&nbsp;聯絡人</button>
+                  </div>
+                </div>
+                <p class='table-box20 '>
+                  <a class='iconLink linkGrey icon-create' href="board_product_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 08 -->
+              <div class='table-body'>
+                <p class='table-box10'><img class='proListImg' src="img/pro.png"></p>
+                <p class='table-box20'>產品類別一</p>
+                <p class='table-box20 text-l'>
+                  中文名稱中文名稱中文名稱中文</br>
+                  Lorem Ipsum is simply dummy text of.
+                </p>
+                <p class='table-box10'>001</p>
+                <div class='table-box20'>
+                  <div class="boxsFull m-d-10">
+                    <div class='btn-half-blueG icon-eye showModel' data-id='15'>&nbsp;供應商</div>
+                  </div>
+                  <div class="boxsFull noneFloat">
+                    <button class='btn-half-blueG icon-eye showModel' data-id='16'>&nbsp;聯絡人</button>
+                  </div>
+                </div>
+                <p class='table-box20 '>
+                  <a class='iconLink linkGrey icon-create' href="board_product_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 09 -->
+              <div class='table-body'>
+                <p class='table-box10'><img class='proListImg' src="img/pro.png"></p>
+                <p class='table-box20'>產品類別一</p>
+                <p class='table-box20 text-l'>
+                  中文名稱中文名稱中文名稱中文</br>
+                  Lorem Ipsum is simply dummy text of.
+                </p>
+                <p class='table-box10'>001</p>
+                <div class='table-box20'>
+                  <div class="boxsFull m-d-10">
+                    <div class='btn-half-blueG icon-eye showModel' data-id='17'>&nbsp;供應商</div>
+                  </div>
+                  <div class="boxsFull noneFloat">
+                    <button class='btn-half-blueG icon-eye showModel' data-id='18'>&nbsp;聯絡人</button>
+                  </div>
+                </div>
+                <p class='table-box20 '>
+                  <a class='iconLink linkGrey icon-create' href="board_product_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
+              <!-- 10 -->
+              <div class='table-body'>
+                <p class='table-box10'><img class='proListImg' src="img/pro.png"></p>
+                <p class='table-box20'>產品類別一</p>
+                <p class='table-box20 text-l'>
+                  中文名稱中文名稱中文名稱中文</br>
+                  Lorem Ipsum is simply dummy text of.
+                </p>
+                <p class='table-box10'>001</p>
+                <div class='table-box20'>
+                  <div class="boxsFull m-d-10">
+                    <div class='btn-half-blueG icon-eye showModel' data-id='19'>&nbsp;供應商</div>
+                  </div>
+                  <div class="boxsFull noneFloat">
+                    <button class='btn-half-blueG icon-eye showModel' data-id='20'>&nbsp;聯絡人</button>
+                  </div>
+                </div>
+                <p class='table-box20 '>
+                  <a class='iconLink linkGrey icon-create' href="board_product_edit2.html"></a>
+                  <button class='iconLink linkGrey icon-trash m-l-10'></button>
+                </p>
+              </div>
             </div>
 
             <div class='boxsFull m-td-25'>
@@ -172,6 +370,1172 @@
                 <div class="numR icon-chevron-down"></div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 光箱 -->
+    <div id="myModel" class="model">
+      <div class='ac_outer'>
+        <!-- 光箱01 -->
+        <div class='model_boxs box_1'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">01對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱02 -->
+        <div class='model_boxs box_2'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">02對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱03 -->
+        <div class='model_boxs box_3'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">03對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱04 -->
+        <div class='model_boxs box_4'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">04對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱05 -->
+        <div class='model_boxs box_5'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">05對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱06 -->
+        <div class='model_boxs box_6'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">06對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱07 -->
+        <div class='model_boxs box_7'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">07對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱08 -->
+        <div class='model_boxs box_8'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">08對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱09 -->
+        <div class='model_boxs box_9'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">09對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱10 -->
+        <div class='model_boxs box_10'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">10對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱11 -->
+        <div class='model_boxs box_11'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">11對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱12 -->
+        <div class='model_boxs box_12'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">12對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱13 -->
+        <div class='model_boxs box_13'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">13對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱14 -->
+        <div class='model_boxs box_14'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">14對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱15 -->
+        <div class='model_boxs box_15'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">15對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱16 -->
+        <div class='model_boxs box_16'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">16對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱17 -->
+        <div class='model_boxs box_17'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">17對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱18 -->
+        <div class='model_boxs box_18'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">18對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱19 -->
+        <div class='model_boxs box_19'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">19對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+        </div>
+        <!-- 光箱20 -->
+        <div class='model_boxs box_20'>        
+          <div class='boxsFull'>
+            <p class="t-blue-20 order-l">20對應窗口</p>
+            <div class='t-close icon-clear'></div>
+          </div>
+
+          <!-- 實線 -->
+          <i class='splitLine_title'></i>
+
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull m-d-25'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
+          </div>
+
+          <!-- 實線 -->
+          <i class="splitLine_title"></i> 
+          
+          <div class='boxsFull'>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>廠商類別：</p>
+              <p class='t-grey-15 text-l p-d-10'>廠商類別名稱</p>
+            </div>
+            <div class='boxs20'>
+              <p class='t-r-15 text-l p-d-10'>供應商：</p>
+              <p class='t-grey-15 text-l p-d-10'>真有錢有限公司</p>
+            </div>
+          </div>
+
+          <!-- 虛線 -->
+          <i class="splitLine_bl"></i>
+
+          <div class='boxsFull'>
+            <p class='t-r-15 text-l p-d-10'>聯絡人：</p>
+            <p class='t-grey-15 text-l'>中山灌瑞王先生；TEL(02)2223-1234；MOB：0912345678</p>
+            <p class='t-grey-15 text-l p-d-10'>abcdefg@gmail.com.tw</p>
           </div>
         </div>
       </div>
