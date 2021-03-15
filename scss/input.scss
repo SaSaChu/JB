@@ -63,6 +63,10 @@ label {
   border: 1px solid $grey_l;
   @include border-radius(3px);
 
+  &.searchNotMT {
+    margin-top: 0;
+  }
+
   input[type=text] {
     padding: 6px;
     margin-top: 2px;
@@ -71,6 +75,11 @@ label {
 
     &::placeholder {
       color: $grey_l;
+    }
+
+    &.price_search {
+      width: 80%;
+      padding: 10px 6px;
     }
   }
 
@@ -88,6 +97,13 @@ label {
     &:hover, &:active {
       background-color: rgba(67, 151, 255, 1);
       color: white;
+    }
+
+    &.price_icon {
+      background-color: $blue_l_30;
+      color: white;
+      float: right;
+      margin: 3px 3px 0 0;
     }
   }
 }
@@ -136,6 +152,57 @@ label {
   font-size: 1rem;
   color: $font-deep-black;
 }
+
+.chooseCheck {
+  display: inline-block;
+  height: 18px;
+  appearance:button;
+  -moz-appearance:button; /* Firefox */
+  -webkit-appearance:button; 
+}
+
+
+
+
+
+
+
+.btn-box {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #ccc;
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.13) inset;
+
+  .btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 0;
+
+    /*動畫從ml為0開始*/
+    transition: .5s;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+
+  &:checked + .btn-box {
+    background-color: #8f8;
+
+    .btn {
+      margin-left: 20px;
+    }
+  }
+}
+
 
 
 

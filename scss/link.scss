@@ -25,7 +25,7 @@ button {
   }
 }
 
-.btn-half-blue, .btn-half-grey, .btn-half-orange, .btn-half-blueG {
+.btn-half-blue, .btn-half-grey, .btn-half-orange, .btn-half-blueG, .btn-half-red, .btn-half-blueG2 {
   display: inline-block;
   padding: 7px 20px;
   color: white;
@@ -37,16 +37,31 @@ button {
   &:hover {
     opacity: .9;
   }
+
+  &.wF {
+    width: 100%;
+  }
+}
+
+.btn-half-blueG2 {
+  background-color: $blueGrey_l;
+}
+
+.btn-half-red {
+  background-color: rgba(255, 238, 233, 1.00);
+  color: $red;
 }
 
 .btn-half-blue {
   background-color: $blue_l;
 
-  &.icon-search {
-    line-height: 30px;
-  }
+  &.icon-search { line-height: 30px;}
 
   &.icon-icon_mail {line-height: 30px;}
+
+  &.icon-comments {line-height: 30px;}
+
+  &.icon-icon03 {line-height: 30px;}
 }
 
 .btn-half-grey {
@@ -61,9 +76,6 @@ button {
   background-color: $orange;
 
   &.icon-send { line-height: 29px;}
-  &.wF {
-    width: 100%;
-  }
 }
 
 .btn-half-blueG {
@@ -162,6 +174,20 @@ button {
 
     &:hover, &:active {
       background-color: $blueGrey_l;
+    }
+
+    &.icon-content_copy {
+      line-height: 29px;
+    }
+
+    &.icon-camera {
+      line-height: 29px;
+      font-size: 1rem;
+    }
+
+    &.icon-eye {
+      line-height: 29px;
+      font-size: 1rem;
     }
   }
 }

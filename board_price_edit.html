@@ -36,22 +36,6 @@
       <div class='boxsFull'>
         <div class='lMenu'>功能選單</div>
         <div class='rTagBox'>
-          <div class="tagBoxL tagBoxC">
-            <div class="order-r">
-              <div class="boxsInline">
-                <input class='statusCheck' type="radio" id="" name="" value="">
-                <label class='statusCheck2' for="male">無效詢價</label>
-              </div>
-              <div class="boxsInline">
-                <input class='statusCheck' type="radio" id="" name="" value="">
-                <label class='statusCheck2' for="female">待處理</label>
-              </div>
-              <div class="boxsInline">
-                <input class='statusCheck' type="radio" id="" name="" value="">
-                <label class='statusCheck2' for="other">已完成</label>
-              </div>
-            </div>
-          </div>
           <div class='tagBox'>
             <a class='tag' href="menu.html">內網首頁</a>
             <a class='tag' href="board_price_list.html">詢價單列表</a>
@@ -80,8 +64,8 @@
 
             <span class="m-menu-t">資深業務</span>
             <div class="m-smenu">
-              <a href="board_price_list.html">詢價列表</a>
-              <a href="board_sales_report.html">業務報表</a>
+              <a href="board_price_list2.html">詢價列表</a>
+              <a href="board_sales_report2.html">業務報表</a>
             </div>
 
             <span class="m-menu-t">採購</span>
@@ -110,6 +94,35 @@
           <div class='centBoxs centNoW'>
             <div class="centBoxRL">
               <div class="boxsWhite m-d-25">
+                <div class='boxsFull m-d-25'>
+                  <div class='box37_r re37_r'>
+                    <p class='t-blue-16'>詢價編號：JB213412093u324</p>
+                    <!-- <button class='iconLink linkGrey icon-content_copy m-l-10'></button> -->
+                  </div>
+                  <div class='box37_l'>
+                    <div class='boxsFull'>
+                      <span class='t-info icon-info order-r' title='定義提示說明大單的意思'></span>
+                      <!-- <div class="info_btn ">
+                        <div class="info_hover">test<div>
+                      </div> -->
+                      <label class='order-r'>
+                        <input type="checkbox" name="" id="" class="checkbox">
+                        <span class="btn-box">
+                          <span class="btn"></span>      
+                        </span>
+                        <span class="t-b-13-nw m-l-10">大單</span>
+                      </label>
+                      <label class='order-r'>
+                        <input type="checkbox" name="" id="" class="checkbox">
+                        <span class="btn-box">
+                          <span class="btn"></span>      
+                        </span>
+                        <span class="t-b-13-nw m-l-10">續訂單</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
                 <div class='boxsFull m-d-25'>
                   <div class='boxs30'>
                     <p class='t-r-15 text-l p-d-10'>客戶簡碼</p>
@@ -164,7 +177,6 @@
                 <i class="splitLine_bl"></i>
 
                 <div class='boxsFull m-d-25'>
-                  <button class='btn-half-blue icon-icon_mail m-l-15 order-r'>&nbsp;選擇片語範本</button>
                   <button class='btn-half-blue icon-icon_mail order-r'>&nbsp;選擇郵件範本</button>
                 </div>
 
@@ -217,111 +229,148 @@
                     <option value="">所屬單位03</option>
                   </select>
                 </div>
-                </br>
-                <div class="select-style">
-                  <select>
-                    <option value="">版本清單</option>
-                    <option value="">所屬單位01</option>
-                    <option value="">所屬單位02</option>
-                    <option value="">所屬單位03</option>
-                  </select>
-                </div>
               </div>
 
               <!-- 選擇商品 -->
               <div class="boxsFull m-d-10">
                 <div class="price_boxs">選擇商品</div>
-                <div class="price_boxsC">dddddddddddddddddd</div>
+                <div class="price_boxsC">
+                  <button class='btn-half-blue icon-icon03 wF'>&nbsp;品項清單</button>
+                  <div class="search-container m-d-25">
+                    <form action="">
+                      <input class='price_search' type="text" placeholder="產品搜尋" name="search">
+                      <button class='searchBtn price_icon' type="submit"><i class="icon-search"></i></button>
+                    </form>
+                  </div>
+                  <div class='chooseBox'>
+                    <!-- 01 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 02 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 03 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 04 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 05 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 06 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 07 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 08 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 09 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 10 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 11 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 12 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 13 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 14 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                    <!-- 15 -->
+                    <div class='boxsFull m-d-10'>
+                      <form class='boxsInline'>
+                        <input class='chooseCheck' type="checkbox" id="" name="" value="">
+                        <label class='t-b-13' for="">產品名稱產品名稱產產品名稱</label><br>
+                      </form>
+                      <button class='iconLink linkGrey icon-camera'></button>
+                    </div>
+                  </div>
+                </div>
                 <div class="price_boxsB"></div>
-              </div>
-
-              <!-- 媒合廠商 -->
-              <div class="boxsFull">
-                <div class="price_boxs">媒合廠商</div>
-                <div class="price_boxsC">dddddddddddddddddd</div>
-                <div class="price_boxsB"></div>
-              </div>
-            </div>
-
-            <div class="boxsYellow m-td-25">
-              <p class="t-black-15 m-d-10">寄送紀錄：</p>
-              <div class='boxsFull'>
-                <div class='table-header'>
-                  <p class='table-box10'>詢價單編號</p>
-                  <p class='table-box10'>版&nbsp;號</p>
-                  <p class='table-box20'>廠&nbsp;商</p>
-                  <p class='table-box10'>廠商聯絡人</p>
-                  <p class='table-box10'>取件人員</p>
-                  <p class='table-box10'>發送人</p>
-                  <p class='table-box10'>發送時間</p>
-                  <p class='table-box10'>取件時間</p>
-                  <p class='table-box10'>完成時間</p>
-                </div>
-                <!-- 01 -->
-                <div class='table-body'>
-                  <p class='table-box10'>JB213412093u324</p>
-                  <p class='table-box10'>001</p>
-                  <p class='table-box20'>真有錢有限公司</p>
-                  <p class='table-box10'>李彬彬</p>
-                  <p class='table-box10'>王小明</p>
-                  <p class='table-box10'>王小明</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                </div>
-                <!-- 02 -->
-                <div class='table-body'>
-                  <p class='table-box10'>JB213412093u324</p>
-                  <p class='table-box10'>001</p>
-                  <p class='table-box20'>真有錢有限公司</p>
-                  <p class='table-box10'>李彬彬</p>
-                  <p class='table-box10'>王小明</p>
-                  <p class='table-box10'>王小明</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                </div>
-                <!-- 03 -->
-                <div class='table-body'>
-                  <p class='table-box10'>JB213412093u324</p>
-                  <p class='table-box10'>001</p>
-                  <p class='table-box20'>真有錢有限公司</p>
-                  <p class='table-box10'>李彬彬</p>
-                  <p class='table-box10'>王小明</p>
-                  <p class='table-box10'>王小明</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                </div>
-                <!-- 04 -->
-                <div class='table-body'>
-                  <p class='table-box10'>JB213412093u324</p>
-                  <p class='table-box10'>001</p>
-                  <p class='table-box20'>真有錢有限公司</p>
-                  <p class='table-box10'>李彬彬</p>
-                  <p class='table-box10'>王小明</p>
-                  <p class='table-box10'>王小明</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                </div>
-                <!-- 05 -->
-                <div class='table-body'>
-                  <p class='table-box10'>JB213412093u324</p>
-                  <p class='table-box10'>001</p>
-                  <p class='table-box20'>真有錢有限公司</p>
-                  <p class='table-box10'>李彬彬</p>
-                  <p class='table-box10'>王小明</p>
-                  <p class='table-box10'>王小明</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                  <p class='table-box10'>2021/02/21 12:13:34</p>
-                </div>
               </div>
             </div>
           </div>
 
-          <div class='centBoxs centNoW'>
+          <div class='centBoxs centNoW m-t-25'>
             <div class="centBoxRL">
               <button class='btn-half-blue order-r'>儲 存</button>
               <button class='btn-half-blueG lh-30 order-l'>清除重填</button>

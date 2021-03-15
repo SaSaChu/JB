@@ -26,6 +26,8 @@
 
 .m-d-20 { margin-bottom: 20px; }
 
+.m-d-15 { margin-bottom: 15px; }
+
 .m-d-10 { margin-bottom: 10px; }
 
 .m-d-100 { margin-bottom: 100px; }
@@ -33,5 +35,7 @@
 .m-l-15 { margin-left: 15px; }
 
 .m-l-10 { margin-left: 10px; }
+
+.m-r-10 { margin-right: 10px; }
 
 .m-lr-10 { margin: 0 10px; }

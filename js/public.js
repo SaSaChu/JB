@@ -16,6 +16,14 @@ $(function() {
     });
   });
 
+  $('.chooseBoxs').click(function() {
+    $(this).next('.chooseBoxsC').each (function () {
+      var $that = $(this);
+      $(this).toggleClass ('chooseBoxsC_show');
+    });
+  });
+
+
 
   $('.block-l-menuBox').each (function () {
     var $that = $(this);

@@ -1,4 +1,4 @@
-@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1615354058') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1615354058') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1615354058') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1615354058') format('svg'); }
+@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1615797046') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1615797046') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1615797046') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1615797046') format('svg'); }
 *[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
 
 .icon-icon_mail:before { content: "\e900"; }
@@ -14,6 +14,8 @@
 .icon-menu_icon02svg:before { content: "\e905"; }
 
 .icon-search:before { content: "\e906"; }
+
+.icon-comments:before { content: "\e920"; }
 
 .icon-home:before { content: "\e907"; }
 
@@ -57,10 +59,16 @@
 
 .icon-info:before { content: "\e91b"; }
 
+.icon-camera:before { content: "\e923"; }
+
 .icon-chevron-down:before { content: "\e91c"; }
 
 .icon-chevron-up:before { content: "\e91d"; }
 
+.icon-eye1:before { content: "\e921"; }
+
 .icon-send:before { content: "\e91e"; }
+
+.icon-trash-2:before { content: "\e922"; }
 
 .icon-lock:before { content: "\e91f"; }

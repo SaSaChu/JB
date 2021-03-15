@@ -7,19 +7,25 @@ button { border: 0; }
 .btn-full-blue { display: inline-block; width: 100%; padding: 10px 0; color: white; font-size: 1.23rem; background-color: #4397ff; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
 .btn-full-blue:hover { opacity: .9; }
 
-.btn-half-blue, .btn-half-grey, .btn-half-orange, .btn-half-blueG { display: inline-block; padding: 7px 20px; color: white; font-size: 1.23rem; min-width: 120px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; text-align: center !important; }
-.btn-half-blue:hover, .btn-half-grey:hover, .btn-half-orange:hover, .btn-half-blueG:hover { opacity: .9; }
+.btn-half-blue, .btn-half-grey, .btn-half-orange, .btn-half-blueG, .btn-half-red, .btn-half-blueG2 { display: inline-block; padding: 7px 20px; color: white; font-size: 1.23rem; min-width: 120px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; text-align: center !important; }
+.btn-half-blue:hover, .btn-half-grey:hover, .btn-half-orange:hover, .btn-half-blueG:hover, .btn-half-red:hover, .btn-half-blueG2:hover { opacity: .9; }
+.btn-half-blue.wF, .btn-half-grey.wF, .btn-half-orange.wF, .btn-half-blueG.wF, .btn-half-red.wF, .btn-half-blueG2.wF { width: 100%; }
+
+.btn-half-blueG2 { background-color: #758499; }
+
+.btn-half-red { background-color: #ffeee9; color: #ff6d4a; }
 
 .btn-half-blue { background-color: #4397ff; }
 .btn-half-blue.icon-search { line-height: 30px; }
 .btn-half-blue.icon-icon_mail { line-height: 30px; }
+.btn-half-blue.icon-comments { line-height: 30px; }
+.btn-half-blue.icon-icon03 { line-height: 30px; }
 
 .btn-half-grey { background-color: #dcdbdc; }
 .btn-half-grey.lh-30 { line-height: 30px; }
 
 .btn-half-orange { background-color: #e99719; }
 .btn-half-orange.icon-send { line-height: 29px; }
-.btn-half-orange.wF { width: 100%; }
 
 .btn-half-blueG { background-color: rgba(117, 132, 153, 0.5); }
 .btn-half-blueG.icon-eye { line-height: 24px; }
@@ -43,6 +49,9 @@ button { border: 0; }
 .iconLink.linkBlue:hover, .iconLink.linkBlue:active { background-color: #4397ff; }
 .iconLink.linkGrey { background-color: rgba(117, 132, 153, 0.5); }
 .iconLink.linkGrey:hover, .iconLink.linkGrey:active { background-color: #758499; }
+.iconLink.linkGrey.icon-content_copy { line-height: 29px; }
+.iconLink.linkGrey.icon-camera { line-height: 29px; font-size: 1rem; }
+.iconLink.linkGrey.icon-eye { line-height: 29px; font-size: 1rem; }
 
 .tag { display: inline-block; font-size: .9rem; color: #758499; }
 .tag:after { display: inline-block; content: '/'; margin: 0 5px; }

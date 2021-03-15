@@ -96,7 +96,32 @@ p {
   margin: 0 10px;
 }
 
+.t-b-13-nw {
+  display: inline-block;
+  font-size: 1rem;
+  color: $font-deep-black;
+}
 
+.t-b-13 {
+  display: inline-block;
+  font-size: 1rem;
+  color: $font-deep-black;
+  width: 120px;
+}
+
+.t-W160 {
+  width: 160px;
+}
+
+.mailbox {
+  display: inline-block;
+  width: 100%;
+  @include border-radius(3px);
+  background-color: $grey_l;
+  font-size: 1.15rem;
+  padding: 10px 15px;
+  color: $font-deep-black;
+}
 
 
 
