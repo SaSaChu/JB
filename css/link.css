@@ -52,6 +52,7 @@ button { border: 0; }
 .iconLink.linkGrey.icon-content_copy { line-height: 29px; }
 .iconLink.linkGrey.icon-camera { line-height: 29px; font-size: 1rem; }
 .iconLink.linkGrey.icon-eye { line-height: 29px; font-size: 1rem; }
+.iconLink.linkGrey.icon-trash-2 { line-height: 29px; }
 
 .tag { display: inline-block; font-size: .9rem; color: #758499; }
 .tag:after { display: inline-block; content: '/'; margin: 0 5px; }

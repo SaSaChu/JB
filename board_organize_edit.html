@@ -13,7 +13,7 @@
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
   </head>
-  <body class="p-d-100">
+  <body>
     <header>
       <!-- 左 -->
       <div class='box50 text-l'>
@@ -36,13 +36,10 @@
       <div class='boxsFull'>
         <div class='lMenu'>功能選單</div>
         <div class='rTagBox'>
-          <div class='tagBoxL'>
-            <a class='tag' href="board_country.html">&lt; &nbsp;回上一頁</a>
-          </div>
           <div class='tagBox'>
             <a class='tag' href="menu.html">內網首頁</a>
-            <a class='tag' href="board_country.html">國別管理</a>
-            <a class='tag'>國別詳細頁</a>
+            <a class='tag' href="board_organize.html">組織管理</a>
+            <a class='tag'>新增組織</a>
           </div>
         </div>
       </div>
@@ -54,11 +51,11 @@
             <span class="m-menu-t">系統管理者</span>
             <div class="m-smenu">
               <a href="board_forget_pw.html">取回密碼</a>
-              <a class='l-menu-active' href="board_country.html">國別管理</a>
-              <a href="board_phrase.html" >片語管理</a>
-              <a href="board_template.html" >詢價範本管理</a>
+              <a href="board_country.html">國別管理</a>
+              <a href="board_phrase.html">片語管理</a>
+              <a href="board_template.html">詢價範本管理</a>
               <a href="board_account.html">帳號管理</a>
-              <a href="board_organize.html">組織管理</a>
+              <a class='l-menu-active' href="board_organize.html">組織管理</a>
             </div>
 
             <span class="m-menu-t">一般業務</span>
@@ -97,30 +94,33 @@
         <!-- 右內容 -->
         <div class='block-r'>
           <div class='centBoxs'>
-            <!-- <div class='boxsFull'>
-              <p class="t-blue-20 p-d-30">新增國別</p>
-            </div> -->
+            <div class='boxsFull'>
+              <p class="t-blue-20 p-d-30">新增組織</p>
+            </div>
 
             <div class='boxsFull m-d-25'>
-              <div class='boxs30'>
-                <p class='t-r-15 text-l p-d-10'>國別中文：</p>
-                <p class='t-grey-15 text-l p-d-10'>台灣</p>
+              <div class='boxs20'>
+                <p class='t-r-15 text-l p-d-10'>組織名稱</p>
+                <label>
+                  <input class='input-f' type="" name="" placeholder="請輸入">
+                </label>
               </div>
-              <div class='boxs30'>
-                <p class='t-r-15 text-l p-d-10'>國別英文：</p>
-                <p class='t-grey-15 text-l p-d-10'>TW</p>
-              </div>
-              <div class='boxs30'>
-                <p class='t-r-15 text-l p-d-10'>編碼：</p>
-                <p class='t-grey-15 text-l p-d-10'>編碼01</p>
+              <div class='boxs20'>
+                <p class='t-r-15 text-l p-d-10'>所屬上層單位</p>
+                <div class="select-style">
+                  <select>
+                    <option value="">請選擇</option>
+                    <option value="">產品類別01</option>
+                    <option value="">產品類別02</option>
+                    <option value="">產品類別03</option>
+                  </select>
+                </div>
               </div>
             </div>
 
-            <div class='boxsFull'>
-              <p class='t-r-15 text-l p-d-10'>備註：</p>
-              <p class='t-grey-15 text-l p-d-10'>
-              備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字
-              </p>
+            <div class='boxsFull m-td-25'>
+              <button class='btn-half-grey order-l'>清除重填</button>
+              <button class='btn-half-blue order-r'>儲&nbsp;存</button>
             </div>
           </div>
         </div>

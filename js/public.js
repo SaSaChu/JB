@@ -39,7 +39,7 @@ $(function() {
     $('#myModel .model_boxs.box_' + $(this).data('id')).addClass('show').siblings().removeClass('show')
   })
 
-  $('.btn_close, .t-close').click(function() {
+  $('.btn_close, .t-close, .btn_delete').click(function() {
     $('#myModel').removeClass('showModel')
   })
 
