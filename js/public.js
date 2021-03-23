@@ -140,22 +140,15 @@ $(function() {
     let j = $rows.data('j')
     $rows.data('j', j + 1)
     
-    let options2 = [{text: '請選擇', val: ''}, {text: '類別01', val: ''}, {text: '類別02', val: ''}, {text: '類別03', val: ''}];
     let options3 = [{text: '請選擇', val: ''}, {text: '類別01', val: ''}, {text: '類別02', val: ''}, {text: '類別03', val: ''}];
 
-    return $('<div />').addClass('boxsFull m-td-25 row').append(
-      $('<div />').addClass('box37_l').append(
-        $('<p />').addClass('t-r-15 text-l p-d-10').text('供應商')).append(
-        $('<div />').addClass('select-style').append(
-          $('<select />').attr('name', 'vendor[' + i + '][name][' + j + ']').append(options2.map(t => $('<option />').text(t.text).val(t.val)))))).append(
-      $('<div />').addClass('box37_r').append(
-        $('<div />').addClass('boxsFull').append(
+    return $('<div />').addClass('boxsFull row').append(
           $('<p />').addClass('t-r-15 text-l p-d-10').text('供應商聯絡人')).append(
           $('<div />').addClass('box19_l').append(
             $('<div />').addClass('select-style').append(
               $('<select />').attr('name', 'vendor[' + i + '][contact][' + j + ']').append(options3.map(t => $('<option />').text(t.text).val(t.val)))))).append(
           $('<div />').addClass('box19_r').append(
-            $('<button />').addClass('icon-add_circle').click(addRow)))))
+            $('<button />').addClass('icon-add_circle').click(addRow)))
   }
   const addRow = function() {
     let $rows = $(this).closest('.rows')
@@ -174,6 +167,7 @@ $(function() {
 
   const createVendor = function(index) {
     let options1 = [{text: '請選擇', val: ''}, {text: '類別01', val: ''}, {text: '類別02', val: ''}, {text: '類別03', val: ''}];
+    let options2 = [{text: '請選擇', val: ''}, {text: '類別01', val: ''}, {text: '類別02', val: ''}, {text: '類別03', val: ''}];
 
     let $div = $('<div />').addClass('boxsFull')
     
@@ -183,14 +177,22 @@ $(function() {
         $('<div />').addClass('select-style').append(
           $('<select />').attr('name', 'vendor[' + index + '][type]').append(options1.map(t => $('<option />').text(t.text).val(t.val))))))
     
-    let $rows = $('<div />').addClass('rows').data('i', index).data('j', 0)
+    let $rows = $('<div />').addClass('box37_r').addClass('rows').data('i', index).data('j', 0)
     let $row = createRow($rows)
     
+    let $div2 = $('<div />').addClass('boxsFull m-td-25 row').append(
+      $('<div />').addClass('box37_l').append(
+        $('<p />').addClass('t-r-15 text-l p-d-10').text('供應商')).append(
+        $('<div />').addClass('select-style').append(
+          $('<select />').attr('name', 'vendor[' + index + '][name]').append(options2.map(t => $('<option />').text(t.text).val(t.val)))))).append(
+      $rows.append($row))
+
     return $div.append(
       $('<i />').addClass('splitLine_bl')).append(
       $div1).append(
-      $rows.append($row))
+      $div2)
   }
+
   let vendorIndex = 0
   $('#create-vendor').click(function() {
     $('#vendors').append(createVendor(vendorIndex++))
@@ -230,4 +232,23 @@ $(function() {
                 $('<input />').attr('name', 'contact[' + contactIndex + '][memo]').attr('type', '').attr('placeholder', '請輸入').addClass('input-f'))))))
   }
   $('#contacts').append(createContact($('#contacts')))
+
+  $('.one-file').each(function() {
+    let $input = $(this).find('input')
+    let $cancel = $(this).find('.cancel')
+    let $cover = $(this).find('.cover')
+    let $name = $(this).find('.name')
+    $cancel.click(function() {
+      $input.val('')
+      $cover.removeClass().addClass('cover')
+    })
+    $input.change(function() {
+      if ($input.get(0).files.length) {
+        $name.text($input.get(0).files[0].name)
+        $cover.removeClass().addClass('show')
+      } else {
+        $cover.removeClass().addClass('cover')
+      }
+    })
+  })
 });

@@ -113,6 +113,11 @@ body {
     margin-right: 30px;
     margin-left: 0;
   }
+  &.rows {
+    .row + .row {
+      margin-top: 50px;
+    }
+  }
 }
 
 .box82_l, .box82_r {
@@ -453,7 +458,25 @@ header {
 }
   
 
-
+.one-file {
+  display: inline-block;
+  margin-top: 12px;
+  position: relative;
+  overflow: hidden;
+  input {
+    @include opacity(0);
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+  }
+  .cover {
+    position: relative;
+    display: none;
+    &.show {
+      display: inline-block;
+    }
+  }
+}
 
 
 

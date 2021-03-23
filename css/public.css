@@ -319,6 +319,7 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 
 .box37_r { width: calc(68% - 30px); margin-left: 30px; }
 .box37_r.re37_r { margin-right: 30px; margin-left: 0; }
+.box37_r.rows .row + .row { margin-top: 50px; }
 
 .box82_l, .box82_r { display: inline-block; float: left; }
 
@@ -394,3 +395,8 @@ header { display: inline-block; width: 100%; height: 80px; padding-left: 15px; p
 .updateBox { display: inline-block; width: 100%; border: 1px dotted rgba(67, 151, 255, 0.3); -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding: 15px; }
 
 .chooseBox { display: inline-block; width: 100%; max-height: 500px; overflow-y: scroll; }
+
+.one-file { display: inline-block; margin-top: 12px; position: relative; overflow: hidden; }
+.one-file input { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; position: absolute; left: -1000px; top: -1000px; }
+.one-file .cover { position: relative; display: none; }
+.one-file .cover.show { display: inline-block; }
