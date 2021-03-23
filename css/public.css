@@ -147,7 +147,7 @@ button { border: 0; }
 
 .icon-cancel { display: inline-block; color: #ff6d4a; background-color: transparent; margin-top: 11px; }
 
-.icon-add_circle { display: inline-block; color: #006fff; font-size: 2rem; background-color: transparent; }
+.icon-add_circle, .icon-remove_circle { display: inline-block; color: #006fff; font-size: 2rem; background-color: transparent; }
 
 .link_order_info { display: inline-block; cursor: pointer; width: 120px; font-size: 1.1rem; color: #202e32; background-color: rgba(67, 151, 255, 0.3); -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; padding: 10px 0; float: left; text-align: center; margin-right: 5px; }
 .link_order_info:first-child { -webkit-border-top-left-radius: 3px; -moz-border-radius-topleft: 3px; border-top-left-radius: 3px; }
@@ -283,6 +283,8 @@ label { padding: 0; margin-right: 12px; cursor: pointer; }
 .t-info { display: inline-block; font-size: 1.38rem; color: #fbdf93; }
 
 body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #202e32; font-size: 13px; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; background-color: #edeff4; }
+
+.order-c { text-align: center; }
 
 .order-l { float: left; }
 

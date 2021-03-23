@@ -23,7 +23,7 @@
 
 .icon-eye:before { content: "\e909"; }
 
-.icon-trash:before { content: "\e90a"; }
+.icon-trash-2:before { content: "\e90a"; }
 
 .icon-add:before { content: "\e90b"; }
 
@@ -69,6 +69,6 @@
 
 .icon-send:before { content: "\e91e"; }
 
-.icon-trash-2:before { content: "\e922"; }
+.icon-trash-2-2:before { content: "\e922"; }
 
 .icon-lock:before { content: "\e91f"; }
