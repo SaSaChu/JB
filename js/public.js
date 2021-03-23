@@ -133,4 +133,101 @@ $(function() {
    });
 
   $('.link_order_info').eq (0).click();
+
+  // let index
+  const createRow = function($rows) {
+    let i = $rows.data('i')
+    let j = $rows.data('j')
+    $rows.data('j', j + 1)
+    
+    let options2 = [{text: '請選擇', val: ''}, {text: '類別01', val: ''}, {text: '類別02', val: ''}, {text: '類別03', val: ''}];
+    let options3 = [{text: '請選擇', val: ''}, {text: '類別01', val: ''}, {text: '類別02', val: ''}, {text: '類別03', val: ''}];
+
+    return $('<div />').addClass('boxsFull m-td-25 row').append(
+      $('<div />').addClass('box37_l').append(
+        $('<p />').addClass('t-r-15 text-l p-d-10').text('供應商')).append(
+        $('<div />').addClass('select-style').append(
+          $('<select />').attr('name', 'vendor[' + i + '][name][' + j + ']').append(options2.map(t => $('<option />').text(t.text).val(t.val)))))).append(
+      $('<div />').addClass('box37_r').append(
+        $('<div />').addClass('boxsFull').append(
+          $('<p />').addClass('t-r-15 text-l p-d-10').text('供應商聯絡人')).append(
+          $('<div />').addClass('box19_l').append(
+            $('<div />').addClass('select-style').append(
+              $('<select />').attr('name', 'vendor[' + i + '][contact][' + j + ']').append(options3.map(t => $('<option />').text(t.text).val(t.val)))))).append(
+          $('<div />').addClass('box19_r').append(
+            $('<button />').addClass('icon-add_circle').click(addRow)))))
+  }
+  const addRow = function() {
+    let $rows = $(this).closest('.rows')
+    let $row = createRow($rows)
+    sortRow($rows.append($row))
+  }
+
+  const removeRow = function() {
+    sortRow($(this).closest('.row').remove().closest('.rows'))
+  }
+
+  const sortRow = function($rows) {
+    $rows.find('button').removeClass().addClass('icon-remove_circle').unbind().click(removeRow)
+    $rows.find('.row').last().find('button').removeClass().addClass('icon-add_circle').unbind().click(addRow)
+  }
+
+  const createVendor = function(index) {
+    let options1 = [{text: '請選擇', val: ''}, {text: '類別01', val: ''}, {text: '類別02', val: ''}, {text: '類別03', val: ''}];
+
+    let $div = $('<div />').addClass('boxsFull')
+    
+    let $div1 = $('<div />').addClass('boxsFull m-td-25').append(
+      $('<div />').addClass('boxs30').append(
+        $('<p />').addClass('t-r-15 text-l p-d-10').text('廠商類別')).append(
+        $('<div />').addClass('select-style').append(
+          $('<select />').attr('name', 'vendor[' + index + '][type]').append(options1.map(t => $('<option />').text(t.text).val(t.val))))))
+    
+    let $rows = $('<div />').addClass('rows').data('i', index).data('j', 0)
+    let $row = createRow($rows)
+    
+    return $div.append(
+      $('<i />').addClass('splitLine_bl')).append(
+      $div1).append(
+      $rows.append($row))
+  }
+  let vendorIndex = 0
+  $('#create-vendor').click(function() {
+    $('#vendors').append(createVendor(vendorIndex++))
+  });
+
+
+
+  let contactIndex = 0
+  const removeContact = function() {
+    sortContact($(this).closest('.row').remove().closest('.rows'))
+  }
+  const sortContact = function($contacts) {
+    $contacts.find('button').removeClass().addClass('icon-remove_circle').unbind().click(removeContact)
+    $contacts.find('.row').last().find('button').removeClass().addClass('icon-add_circle').unbind().click(addContact)
+  }
+  const addContact = function() {
+    let $contacts = $(this).closest('.rows')
+    sortContact($contacts.append(createContact($contacts)))
+  }
+  const createContact = function($contacts) {
+    return contactIndex++, $('<div />').addClass('boxsFull m-td-25 row')
+      .append(
+        $('<div />').addClass('box20').append(
+          $('<p />').addClass('t-r-15 text-l p-d-10').text('電子郵件')).append(
+          $('<div />').addClass('boxsFull p-d-15').append(
+            $('<div />').addClass('box19_l').append(
+              $('<label />').append(
+                $('<input />').attr('name', 'contact[' + contactIndex + '][mail]').attr('type', '').attr('placeholder', '請輸入').addClass('input-f')))).append(
+            $('<div />').addClass('box19_r order-c').append(
+              $('<button />').addClass('icon-add_circle').click(addContact)))))
+      .append(
+        $('<div />').addClass('box20').append(
+          $('<p />').addClass('t-r-15 text-l p-d-10').text('電子郵件備註')).append(
+          $('<div />').addClass('boxsFull p-d-15').append(
+            $('<div />').addClass('box19_l').append(
+              $('<label />').append(
+                $('<input />').attr('name', 'contact[' + contactIndex + '][memo]').attr('type', '').attr('placeholder', '請輸入').addClass('input-f'))))))
+  }
+  $('#contacts').append(createContact($('#contacts')))
 });
