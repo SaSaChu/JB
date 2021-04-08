@@ -127,6 +127,7 @@ body {
 
 .box82_l {
   width: 80%;
+  min-height: 1px;
 }
 .box82_r {
   width: 20%;
@@ -457,7 +458,34 @@ header {
   overflow-y: scroll;
 }
   
+.mu-file {
 
+  display: inline-block;
+  margin-top: 12px;
+  position: relative;
+  overflow: hidden;
+  &.show {
+    input {
+      @include opacity(0);
+      position: absolute;
+      left: -1000px;
+      top: -1000px;
+    }
+    img, p {
+      display: inline-block;
+    }
+  }
+  input {
+    margin-top: 4px;
+    border: 1px solid rgba(117, 182, 255, 1.00);
+    background-color: rgba(237, 245, 255, 1.00);
+    color: rgba(117, 182, 255, 1.00);
+    @include border-radius(4px);
+  }
+  img, p {
+    display: none;
+  }
+}
 .one-file {
   display: inline-block;
   margin-top: 12px;

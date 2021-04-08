@@ -233,11 +233,41 @@ $(function() {
   }
   $('#contacts').append(createContact($('#contacts')))
 
+  $('.createFile').click(function() {
+    let $list = $(this).parent().prev()
+    let $input = $('<input />').attr('type', 'file')
+    let $name = $('<p />').addClass('t-file')
+    let $div = $('<div />').addClass('boxsFull mu-file')
+    let $button = $('<button />').addClass('icon-cancel del').click(_ => $div.remove())
+    
+    $div.append($input)
+      .append($('<img />').attr('src', 'img/file_icon.svg'))
+      .append($name)
+      .append($button)
+
+    $list.append($div)
+    $input.click()
+
+    $input.change(function() {
+      if ($input.get(0).files.length) {
+        $name.text($input.get(0).files[0].name)
+        $div.addClass('show')
+      } else {
+        $div.removeClass('show')
+      }
+    })
+  })
+
   $('.one-file').each(function() {
+    let $that = $(this)
     let $input = $(this).find('input')
     let $cancel = $(this).find('.cancel')
-    let $cover = $(this).find('.cover')
+    let $del = $(this).find('.del')
+    let $cover = $(this).find('> div')
     let $name = $(this).find('.name')
+    $del.click(function() {
+      $that.remove()
+    })
     $cancel.click(function() {
       $input.val('')
       $cover.removeClass().addClass('cover')
