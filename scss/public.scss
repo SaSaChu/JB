@@ -46,6 +46,11 @@ body {
 .boxsFull {
   display: inline-block;
   width: 100%;
+
+  &.over700 {
+    height: 700px;
+    overflow-y:auto;
+  }
 }
 
 .boxsFull_15 {

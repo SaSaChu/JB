@@ -295,6 +295,7 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 .boxsInline { display: inline-block; }
 
 .boxsFull { display: inline-block; width: 100%; }
+.boxsFull.over700 { height: 700px; overflow-y: auto; }
 
 .boxsFull_15 { display: inline-block; width: 100%; padding: 15px; *zoom: 1; }
 .boxsFull_15:after { display: table; content: ""; line-height: 0; clear: both; }
