@@ -421,6 +421,17 @@ header {
   float: left;
 }
 
+.boxok {
+  display: none;
+
+  &.boxok-show {
+    display: inline-block;
+  }
+
+  width: 100%;
+  padding: 20px 10px;
+  background-color: rgba(255, 255, 255, .5);
+}
 
 .boxsWhite {
   display: inline-block;
@@ -434,12 +445,42 @@ header {
   }
 }
 
+.boxsWhite2 {
+  display: inline-block;
+  // width: 100%;
+  background-color: white;
+  @include border-radius(3px);
+  padding: 30px;
+
+  &.bw2-s {
+    width: calc(69% - 25px);
+  }
+}
+
+.boxsWhite3 {
+  display: none;
+
+  &.bw3-s {
+    display: inline-block;
+  }
+
+  width: 30%;
+  background-color: white;
+  @include border-radius(3px);
+  padding: 30px;
+  margin-left: 25px;
+}
+
 .boxsYellow {
   display: inline-block;
   width: 100%;
   @include border-radius(3px);
   padding: 30px;
   background-color: $yellow;
+
+  &.by2 {
+    padding: 10px;
+  }
 }
 
 .numBox {

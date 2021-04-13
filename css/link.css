@@ -7,6 +7,8 @@ button { border: 0; }
 .btn-full-blue { display: inline-block; width: 100%; padding: 10px 0; color: white; font-size: 1.23rem; background-color: #4397ff; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
 .btn-full-blue:hover { opacity: .9; }
 
+.btn-s-blue { display: inline-block; padding: 5px 10px; color: white; font-size: 1rem; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; text-align: center !important; background-color: #4397ff; float: right; }
+
 .btn-half-blue, .btn-half-grey, .btn-half-orange, .btn-half-blueG, .btn-half-red, .btn-half-blueG2 { display: inline-block; padding: 7px 20px; color: white; font-size: 1.23rem; min-width: 120px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; text-align: center !important; }
 .btn-half-blue:hover, .btn-half-grey:hover, .btn-half-orange:hover, .btn-half-blueG:hover, .btn-half-red:hover, .btn-half-blueG2:hover { opacity: .9; }
 .btn-half-blue.wF, .btn-half-grey.wF, .btn-half-orange.wF, .btn-half-blueG.wF, .btn-half-red.wF, .btn-half-blueG2.wF { width: 100%; }

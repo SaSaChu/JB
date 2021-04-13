@@ -67,6 +67,10 @@ label {
     margin-top: 0;
   }
 
+  &.s100 {
+    width: 100%;
+  }
+
   input[type=text] {
     padding: 6px;
     margin-top: 2px;
@@ -77,8 +81,18 @@ label {
       color: $grey_l;
     }
 
+    &.price_searchFull {
+      width: 100%;
+      padding: 10px 6px;
+    }
+
     &.price_search {
       width: 80%;
+      padding: 10px 6px;
+    }
+
+    &.price_search79 {
+      width: 79%;
       padding: 10px 6px;
     }
 

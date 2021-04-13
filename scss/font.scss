@@ -100,6 +100,10 @@ p {
   display: inline-block;
   font-size: 1rem;
   color: $font-deep-black;
+
+  &.b8 {
+    width: 80%;
+  }
 }
 
 .t-b-13 {
@@ -107,6 +111,13 @@ p {
   font-size: 1rem;
   color: $font-deep-black;
   width: 120px;
+}
+
+.t-b-13-s {
+  display: inline-block;
+  font-size: 1rem;
+  color: $font-deep-black;
+  width: 100px;
 }
 
 .t-W160 {

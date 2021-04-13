@@ -1,5 +1,7 @@
 .p-td-40 { padding-top: 40px; padding-bottom: 40px; }
 
+.p-td-20 { padding-top: 20px; padding-bottom: 20px; }
+
 .p-lr-30 { padding-left: 30px; padding-right: 30px; }
 
 .p-d-40 { padding-bottom: 40px; }
@@ -11,6 +13,8 @@
 .p-d-15 { padding-bottom: 15px; }
 
 .p-d-10 { padding-bottom: 10px; }
+
+.p-d-25 { padding-bottom: 25px; }
 
 .p-t-16 { padding-top: 16px; }
 

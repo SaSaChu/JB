@@ -82,6 +82,15 @@ $(function() {
   // });
 
 
+  $('.note-ok').click(function() {
+    $('.boxsWhite2').toggleClass('bw2-s');
+    $('.boxsWhite3').toggleClass('bw3-s');
+  });
+
+  $('.saleok').click(function() {
+    $('.boxok').toggleClass('boxok-show');
+  });
+
   $('.lMenu').click(function() {
     $('.lMenu').toggleClass('lMenu-show');
     $('.block-l').toggleClass('block-l-show');
