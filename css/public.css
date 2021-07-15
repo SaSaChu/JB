@@ -443,3 +443,6 @@ header { display: inline-block; width: 100%; height: 80px; padding-left: 15px; p
 .one-file input { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; position: absolute; left: -1000px; top: -1000px; }
 .one-file .cover { position: relative; display: none; }
 .one-file .cover.show { display: inline-block; }
+
+.list-table { overflow-x: auto; }
+@media screen and (max-width: 1299px) and (min-width: 0) { .list-table .boxsFull { width: 1300px; } }

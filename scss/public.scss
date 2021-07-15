@@ -564,3 +564,12 @@ header {
 
 
 
+
+.list-table {
+  overflow-x: auto;
+  .boxsFull {
+    @include range-width(0, 1300px) {
+      width: 1300px;
+    }
+  }
+}
