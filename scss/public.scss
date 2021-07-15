@@ -46,10 +46,18 @@ body {
 .boxsFull {
   display: inline-block;
   width: 100%;
+  @include clearfix();
 
   &.over700 {
     height: 350px;
     overflow-y:auto;
+  }
+
+  @include range-width(0, 1300px) {
+    &.over1335 {
+      overflow-x: hidden;
+      white-space: nowrap;
+    }
   }
 }
 

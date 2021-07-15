@@ -119,9 +119,11 @@
 .table-header, .table-body {
   display: inline-block;
   width: 100%;
+  // max-width: 1600px;
   padding: 15px 10px;
   @include clearfix();
   text-align: center;
+  float: left;
 }
 
 .table-header {
@@ -137,13 +139,28 @@
   font-size: 1.07rem;
 }
 
-.table-box10, .table-box20, .table-box30, .table-box40, .table-box50, .table-box60, .table-box70, .table-box80, .table-box90{
+.table-box05, .table-box10, .table-box15, .table-box20, .table-box30, .table-box40, .table-box45, .table-box50, .table-box55, .table-box60, .table-box70, .table-box80, .table-box90{
   display: inline-block;
   float: left;
+  text-align: left;
+  padding-right: 10px;
+  font-size: 1rem;
+
+  &.f13 {
+    font-size: 1rem;
+  }
 }
 
 .noneFloat {
   float: none !important;
+}
+
+.table-box05 {
+  width: 5%;
+
+  &.t-red {
+    color: $red;
+  }
 }
 
 .table-box10 {
@@ -152,6 +169,10 @@
   &.t-red {
     color: $red;
   }
+}
+
+.table-box15 {
+  width: 15%;
 }
 
 .table-box20 {
@@ -166,8 +187,16 @@
   width: 40%;
 }
 
+.table-box45 {
+  width: 45%;
+}
+
 .table-box50 {
   width: 50%;
+}
+
+.table-box55 {
+  width: 55%;
 }
 
 .table-box60 {
